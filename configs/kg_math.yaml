@@ -1,0 +1,520 @@
+project_root: .
+paths:
+  raw_dir: data/raw
+  interim_dir: data/interim
+  graph_dir: data/graph
+  logs_dir: data/logs
+seed:
+  source: local_math_dir
+  local_math_dir: /home/dataset-local/usr/lh/zeg/datasets/MATH
+  local_split: train
+  local_jsonl: data/raw/math_train.jsonl
+  limit: null
+msc:
+  pdf_path: data/raw/MSC_2020.pdf
+  catalog_csv: data/interim/msc2020_codes.csv
+  top_global: 20
+  top_l1: 20
+  max_candidates: 40
+  allowed_l1:
+  - '05'
+  - '11'
+  - '15'
+  - '26'
+  - '40'
+  - '51'
+  allowed_prefix:
+  - 05A
+  - 05C
+  - 11A
+  - 11B
+  - 11D
+  - 15A
+  - 26A
+  - 26B
+  - 26C
+  - '40'
+  - 51M
+  - 51N
+  blocklist_regex: ideal|algebraic number field|ring of integers|commutative ring|commutative
+    rings|galois|scheme|sheaf|cohomology|automorphic|p-adic|modular|manifold|category|elliptic
+    curve|abelian variety|operator|stochastic process|inference|actuarial|statistics
+    to
+concept_extraction:
+  enable_llm: true
+  provider: openai_compatible
+  base_url: http://172.96.160.199:3000/v1
+  model: gpt-5.4
+  api_key_env: OPENAI_API_KEY
+  api_key: ""
+  votes: 1
+  temperature: 0.0
+  max_concepts_per_item: 8
+  min_concepts_per_item: 3
+  max_msc_codes_per_item: 2
+  msc_aux_policy: same_prefix3
+  msc_aux_min_score_ratio: 0.9
+  msc_aux_min_abs_score: 0.05
+  msc_aux_candidate_topk: 6
+  msc_aux_votes: 1
+  topic_mode: msc_code
+  workers: 32
+  flush_every: 100
+  resume: true
+  strict_llm: true
+  allow_fallback: false
+  max_fallback_rate: 0.01
+  probe_llm_before_run: true
+pre_edge:
+  enable_llm: true
+  base_url: http://172.96.160.199:3000/v1
+  model: gpt-5.4
+  api_key_env: OPENAI_API_KEY
+  api_key: ""
+  votes: 3
+  temperature: 0.0
+  min_conf: 0.78
+  min_vote_conf: 0.8
+  min_model_conf: 0.65
+  cross_domain_min_conf: 0.86
+  cross_domain_min_vote_conf: 0.9
+  cross_domain_min_model_conf: 0.75
+  max_pairs: 8000
+  candidate_topk_per_node: 10
+  candidate_per_bucket_cap: 10
+  allow_cross_domain_candidates: true
+  cross_domain_per_node_cap: 1
+  directional_double_check: true
+  min_pair_support: 0.02
+  min_pair_cooccur: 1
+  cross_domain_min_pair_support: 0.05
+  cross_domain_min_pair_cooccur: 2
+  difficulty_margin: 0.03
+  cross_domain_difficulty_margin: 0.06
+  require_difficulty_order_if_available: true
+  require_difficulty_values: false
+  enable_transitive_reduction: true
+  workers: 32
+  flush_every: 500
+  resume: true
+graph:
+  node_mode: msc_code
+  min_node_freq: 1
+  max_nodes: 800
+  use_subnodes: true
+  subnode_max_per_msc: 3
+  subnode_min_concept_freq: 1
+  subnode_top_concepts: 80
+embedding:
+  method: tfidf_char
+  svd_dim: 128
+  sem_topk: 6
+  sem_min_sim: 0.3
+  sem_min_pre_distance: 3
+  sem_require_cross_or_far: true
+  sem_candidate_mult: 4
+  sem_mutual_topk: true
+  sem_mix_word_within_lex: 0.6
+  sem_mix_char_within_lex: 0.4
+  sem_mix_lex_weight: 0.55
+  sem_mix_cooccur_weight: 0.3
+  sem_mix_hier_weight: 0.15
+cas:
+  lambda_sem: 0.5
+  lambda_pre: 0.3
+  lambda_link: 0.2
+  tau_pre: 2.0
+difficulty:
+  min_seed_support: 10
+  smooth_eta: 2.0
+  smooth_iters: 10
+  easy_max: 0.38
+  medium_max: 0.68
+runtime:
+  random_seed: 42
+  workers: 8
+  batch_size: 64
+synthesis:
+  base_url: http://123.129.219.111:3000/v1
+  api_key_env: OPENAI_API_KEY
+  api_key: ""
+  reasoner_model: gpt-4o
+  chat_model: gpt-4o
+  judge_model: gpt-4o
+  planning_timeout_sec: 60
+  batch_timeout_sec: 180
+  temperature_reasoner: 0.2
+  temperature_chat: 0.2
+mappings:
+  subject_to_domain:
+    Algebra: algebra
+    Counting & Probability: combinatorics
+    Geometry: geometry
+    Intermediate Algebra: algebra
+    Number Theory: number_theory
+    Prealgebra: algebra
+    Precalculus: calculus
+  subject_to_msc_l1:
+    Algebra: '11'
+    Counting & Probability: '05'
+    Geometry: '51'
+    Intermediate Algebra: '11'
+    Number Theory: '11'
+    Prealgebra: '11'
+    Precalculus: '26'
+  subject_to_allowed_l1:
+    Algebra:
+    - '11'
+    - '05'
+    - '15'
+    - '40'
+    - '51'
+    Intermediate Algebra:
+    - '11'
+    - '05'
+    - '15'
+    - '40'
+    - '51'
+    Prealgebra:
+    - '11'
+    - '05'
+    - '51'
+    - '15'
+    - '40'
+    Number Theory:
+    - '11'
+    Counting & Probability:
+    - '05'
+    - '11'
+    Geometry:
+    - '51'
+    Precalculus:
+    - '26'
+    - '15'
+    - '40'
+    - '51'
+  subject_to_allowed_prefix:
+    Algebra:
+    - 11A
+    - 11B
+    - 11D
+    - 05A
+    - 15A
+    - '40'
+    - 51M
+    - 51N
+    Intermediate Algebra:
+    - 11A
+    - 11B
+    - 11D
+    - 05A
+    - 15A
+    - '40'
+    - 51M
+    - 51N
+    Prealgebra:
+    - 11A
+    - 11B
+    - 11D
+    - 05A
+    - 05C
+    - 51M
+    - 51N
+    - 15A
+    - '40'
+    Number Theory:
+    - 11A
+    - 11B
+    - 11D
+    Counting & Probability:
+    - 05A
+    - 05C
+    - 11A
+    - 11B
+    Geometry:
+    - 51M
+    - 51N
+    Precalculus:
+    - 26A
+    - 26B
+    - 26C
+    - 15A
+    - '40'
+    - 51M
+    - 51N
+  domain_adjacency:
+    algebra:
+    - number_theory
+    - calculus
+    - geometry
+    number_theory:
+    - algebra
+    - combinatorics
+    combinatorics:
+    - number_theory
+    - algebra
+    geometry:
+    - algebra
+    - calculus
+    calculus:
+    - algebra
+    - geometry
+  msc_adjacency:
+    '00':
+    - '01'
+    - '03'
+    - '05'
+    - '11'
+    - '13'
+    - '14'
+    - '15'
+    - '26'
+    - '34'
+    - '35'
+    - '49'
+    - '51'
+    - '52'
+    - '53'
+    - '60'
+    - '62'
+    - '68'
+    '01':
+    - '03'
+    - '05'
+    - '11'
+    - '13'
+    - '15'
+    - '68'
+    '03':
+    - '01'
+    - '05'
+    - '68'
+    '05':
+    - '03'
+    - '11'
+    - '60'
+    - '62'
+    - '68'
+    '11':
+    - '05'
+    - '12'
+    - '13'
+    - '14'
+    - '20'
+    '12':
+    - '11'
+    - '13'
+    - '14'
+    - '16'
+    - '20'
+    '13':
+    - '11'
+    - '12'
+    - '14'
+    - '15'
+    - '16'
+    '14':
+    - '11'
+    - '12'
+    - '13'
+    - '15'
+    - '51'
+    - '53'
+    '15':
+    - '13'
+    - '14'
+    - '16'
+    - '65'
+    - '68'
+    '16':
+    - '12'
+    - '13'
+    - '15'
+    - '17'
+    - '20'
+    '17':
+    - '16'
+    - '20'
+    - '22'
+    '20':
+    - '11'
+    - '12'
+    - '16'
+    - '22'
+    - '57'
+    '22':
+    - '17'
+    - '20'
+    - '51'
+    - '57'
+    '26':
+    - '30'
+    - '34'
+    - '35'
+    - '49'
+    - '58'
+    - '65'
+    '30':
+    - '26'
+    - '31'
+    - '32'
+    - '34'
+    - '35'
+    - '46'
+    '31':
+    - '30'
+    - '32'
+    - '35'
+    '32':
+    - '30'
+    - '31'
+    - '35'
+    - '37'
+    '34':
+    - '26'
+    - '30'
+    - '35'
+    - '37'
+    - '49'
+    '35':
+    - '26'
+    - '30'
+    - '31'
+    - '32'
+    - '34'
+    - '37'
+    - '49'
+    - '58'
+    - '65'
+    '37':
+    - '32'
+    - '34'
+    - '35'
+    - '53'
+    '39':
+    - '35'
+    - '46'
+    - '47'
+    - '58'
+    '46':
+    - '30'
+    - '39'
+    - '47'
+    - '53'
+    '47':
+    - '39'
+    - '46'
+    - '53'
+    - '57'
+    '49':
+    - '26'
+    - '34'
+    - '35'
+    - '58'
+    - '65'
+    '51':
+    - '14'
+    - '22'
+    - '52'
+    - '53'
+    - '57'
+    '52':
+    - '51'
+    - '53'
+    - '57'
+    '53':
+    - '14'
+    - '37'
+    - '46'
+    - '47'
+    - '51'
+    - '52'
+    - '57'
+    '54':
+    - '53'
+    - '57'
+    - '58'
+    '55':
+    - '57'
+    - '58'
+    - '60'
+    '57':
+    - '20'
+    - '22'
+    - '47'
+    - '51'
+    - '52'
+    - '53'
+    - '54'
+    - '55'
+    - '58'
+    - '60'
+    - '62'
+    '58':
+    - '26'
+    - '35'
+    - '39'
+    - '49'
+    - '54'
+    - '55'
+    - '57'
+    - '60'
+    - '62'
+    - '65'
+    '60':
+    - '05'
+    - '55'
+    - '57'
+    - '58'
+    - '62'
+    '62':
+    - '05'
+    - '57'
+    - '58'
+    - '60'
+    - '65'
+    - '68'
+    '65':
+    - '15'
+    - '26'
+    - '35'
+    - '49'
+    - '58'
+    - '62'
+    '68':
+    - '01'
+    - '03'
+    - '05'
+    - '15'
+    - '62'
+  aime_y: 0.7
+  amc12_y: 0.45
+  amc10_y: 0.35
+sub_pre_edge:
+  min_sim_concept: 0.1
+  min_pair_cooccur: 1
+  min_difficulty_gap: 0.05
+  max_out_per_node: 6
+  reverse_keep_ratio: 1.15
+  enforce_dag: true
+sub_sem_edge:
+  min_sim_concept: 0.2
+  min_seed_jaccard: 0.01
+  max_seed_jaccard: 0.25
+  max_difficulty_gap: 0.12
+  max_degree_per_node: 2
+main_sem_edge:
+  bridge_min_score: 0.35
+  bridge_min_count: 2
+  bridge_topk_mean_k: 3
+  bridge_min_topk_mean: 0.38
+  max_degree_per_main: 3
+  enable_llm_gate: true
+  llm_votes: 1
+  llm_temperature: 0.0
+  llm_min_conf: 0.55
+  llm_workers: 8
+  base_url: http://172.96.160.199:3000/v1
+  model: gpt-5.4
+  api_key_env: OPENAI_API_KEY
+  api_key: ""

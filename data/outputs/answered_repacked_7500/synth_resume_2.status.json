@@ -1,0 +1,195 @@
+{
+  "state": "ok_with_errors",
+  "model": "",
+  "easy_model": "gemini-3-flash-preview",
+  "medium_model": "gemini-3-flash-preview",
+  "hard_model": "gemini-3-flash-preview",
+  "base_url": "http://123.129.219.111:3000/v1",
+  "input_files": [
+    "/tmp/step11_prod_splits/synth_rem_2.jsonl"
+  ],
+  "requested_rows": 1212,
+  "completed_rows": 218,
+  "failed_rows": 994,
+  "current_shard": "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_2_03.jsonl",
+  "current_shard_rows": 11,
+  "touched_shards": [
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_2_01.jsonl",
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_2_02.jsonl",
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_2_03.jsonl"
+  ],
+  "error": "",
+  "recent_errors": [
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "For angles ax, bx, and cx, given tan x + 2 tan 2x + 4 tan 4x + 8 tan 8x = 0 and x is within the interval [0, π/4], determine the maximum value of tan(ax) + tan(bx) + tan(cx).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013322984654853WSRbO8La)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Determine the minimum number of removals required to eliminate all geometric shapes (Circle, Square, Triangle, Hexagon) following the sequence-dependent rules: Circle must be removed before Square, and Triangle must be removed before Hexago",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 2026032601332355392692fawVLCsp)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Given \\( x \\) as a real number bounded within the interval \\([0, \\frac{\\pi}{2}]\\) and \\( y = \\sin(x) + \\cos(x) \\), find the minimum value of \\( x + y \\).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323128317696Bedq7B6I)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Determine the locus of points equidistant from Line L1: y = x + 3 and Line L2: y = x - 2 after transforming from non-standard coordinates u = x + y, v = x - y.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323202884911Nx1c7Fo4)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Department A: A set of employees with salaries following a normal distribution with mean $50,000 and standard deviation $5,000. Department B: A set of employees with salaries following a normal distribution with mean $60,000 and standard de",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323274120308RQ9T6lKO)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Find the minimum value of the expression F = x^2 + y^2 + 3xy - 4x + 5y, subject to the constraint x^2 + y^2 = 1, where x and y are real numbers. Assume the expression F is bounded and the minimum exists.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323355939973MhbdFNLy)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "What is the sum of the angles of triangle \\(ABC\\) with sides \\(AB = 3\\), \\(BC = 4\\), \\(CA = 5\\) using the Law of Cosines?",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323429038768dlVPfqdB)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Given a set of digits {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, determine the maximum number of distinct 5-digit numbers that can be formed under the constraints that each digit must be distinct, the sum of the first and last digit must be even, and ",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323501419350VbPn6QGC)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Consider the quadratic expression f(x) = 2x^2 - 3x + 1 and the new term 4 * sin(x). Determine the set of x in [0, 2π] for which the inequality f(x) + 4 * sin(x) > 0 holds.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323592596762shF0nqd3)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Given a convex polygon defined by vectors v_1, v_2, v_3, v_4, and v_5 in 2D space, calculate the centroid of the polygon.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323667609428DV4DAHAn)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Determine the eigenvalues of the matrix \\( A = \\begin{bmatrix} 2 & -1 & 0 \\\\ -1 & 2 & -1 \\\\ 0 & -1 & 2 \\end{bmatrix} \\).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323740572725HKreAXCg)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Parabola P1 has a focus at (0,0) and a directrix y = -2x + 3. Parabola P2 has a focus at (0,0) and a directrix y = x - 1. Parabola P3 has a focus at (0,0) and a directrix y = 2x + 2. Determine the intersection points of the parabolas P1, P2",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323805979468aFDAfSYd)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Determine the matrix M that first reflects vector v through plane P defined by normal vector n = (a, b, c) and then scales it by a factor of k.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323880597135qIdCUso6)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Solve for the values of \\( x \\) and \\( y \\) that satisfy the system of equations \\( x^2 + y^2 = 1 \\) and \\( x^3 + y^3 = 1 \\), given that \\( x, y \\in [-1, 1] \\).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013323944769260pUzIxA2z)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Find the minimum value of the expression f(x) = sin(x) + cos(x) subject to the constraint sin(x) + cos(x) ≥ 1/2, for x in the interval [0, 2π].",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013324344458040sEkGBQ9)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "In triangle ABC with vertices A(0, 0), B(4, 0), and C(2, 3), point D is on segment AC such that AD = 1. A crease EF is formed by folding triangle ABC along line AD. Find the length of the crease EF.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013324128492184R999KimL)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Angle ∠ABC is 60 degrees. Length of AB is 5 units. Length of BC is 7 units. Calculate the number of distinct geometric configurations of triangle ABC that satisfy the given angle and length restrictions.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 202603260133241970541589fiJ5BsU)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Determine the values of x, y, and z that satisfy the system of equations sin(x) + cos(y) = z, x^2 + y^2 = 1, and z = 2 * x + 3 * y, where x ∈ [0, 2π], y ∈ [-1, 1], and z ∈ [0, 10].",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013324277880250JKDginyX)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Calculate the number of valid paths from the top-left corner (1,1) to the bottom-right corner (10,10) in grid G, avoiding obstacles located at positions (3,5), (6,7), and (8,2).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326013324355266983YmoKebfp)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_2.jsonl",
+      "problem_preview": "Matrix A is a 3x3 matrix with entries [[1, 2, 3], [4, 5, 6], [7, 8, 9]], and Matrix B is a 3x3 matrix with entries [[9, 8, 7], [6, 5, 4], [3, 2, 1]]. Determine the rank of the resulting matrix from the product of matrices A and B.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_request_error: timed out"
+    }
+  ],
+  "started_at": 1774434038.2659223,
+  "easy_max_tokens": 45000,
+  "medium_max_tokens": 75000,
+  "hard_max_tokens": 75000,
+  "easy_min_completion_tokens": 1500,
+  "medium_min_completion_tokens": 2500,
+  "hard_min_completion_tokens": 2500,
+  "retries": 1,
+  "debug_store_raw": false,
+  "debug_raw_char_cap": 4000,
+  "finished_at": 1774460124.5080445
+}

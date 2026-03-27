@@ -1,0 +1,64 @@
+l1,desc
+00,General and overarching topics; collections
+01,History and biography [See also the classification number –03 in
+03,Mathematical logic and foundations
+05,"Combinatorics {For finite fields, see 11Txx}"
+06,"Order, lattices, ordered algebraic structures [See also 18B35]"
+08,General algebraic systems
+11,Number theory
+12,Field theory and polynomials
+13,Commutative algebra
+14,Algebraic geometry
+15,Linear and multilinear algebra; matrix theory
+16,"Associative rings and algebras {For the commutative case, see"
+17,Nonassociative rings and algebras
+18,"Category theory; homological algebra {For commutative rings,"
+19,"K-theory [See also 16E20, 18F25]"
+20,Group theory and generalizations
+22,"Topological groups, Lie groups {For transformation groups, see"
+26,Real functions [See also 54C30]
+28,"Measure and integration {For analysis on manifolds, see 58-XX}"
+30,Functions of a complex variable
+31,"Potential theory {For probabilistic potential theory, see 60J45}"
+32,"Several complex variables and analytic spaces {For infinitedimensional holomorphy, see also 46G20, 58B12}"
+33,Special functions (33-XX deals with the properties of functions
+34,Ordinary differential equations
+35,Partial differential equations
+37,"Dynamical systems and ergodic theory [See also 26A18, 28Dxx,"
+39,Difference and functional equations
+40,"Sequences, series, summability"
+41,Approximations and expansions {For approximation theory in
+42,Harmonic analysis on Euclidean spaces
+43,Abstract harmonic analysis {For other analysis on topological
+44,"Integral transforms, operational calculus {For fractional derivatives and integrals, see 26A33; for Fourier transforms, see 42A38, 42B10;"
+45,Integral equations
+46,Functional analysis {For manifolds modeled on topological linear
+47,Operator theory
+49,Calculus of variations and optimal control; optimization [See also
+51,"Geometry {For algebraic geometry, see 14-XX; for differential"
+52,Convex and discrete geometry
+53,"Differential geometry {For differential topology, see 57Rxx; for"
+54,"General topology {For the topology of manifolds of all dimensions, see 57Nxx}"
+55,Algebraic topology
+57,"Manifolds and cell complexes {For complex manifolds, see"
+58,"Global analysis, analysis on manifolds [See also 32Cxx, 32Fxx,"
+60,"Probability theory and stochastic processes {For additional applications, see 05Cxx, 11Kxx, 34-XX, 35-XX, 62-XX, 76-XX, 81-XX,"
+62,Statistics
+65,Numerical analysis
+68,"Computer science {For papers containing software, source code,"
+70,"Mechanics of particles and systems {For relativistic mechanics,"
+74,Mechanics of deformable solids
+76,"Fluid mechanics {For general continuum mechanics, see 74Axx,"
+78,"Optics, electromagnetic theory {For quantum optics, see 81V80}"
+80,"Classical thermodynamics, heat transfer {For thermodynamics"
+81,Quantum theory
+82,"Statistical mechanics, structure of matter"
+83,Relativity and gravitational theory
+85,"Astronomy and astrophysics {For celestial mechanics, see 70F15}"
+86,"Geophysics [See also 76U05, 76V05]"
+90,"Operations research, mathematical programming"
+91,"Game theory, economics, finance, and other social and behavioral"
+92,Biology and other natural sciences
+93,"Systems theory; control {For optimal control, see 49-XX}"
+94,"Information and communication theory, circuits"
+97,Mathematics education

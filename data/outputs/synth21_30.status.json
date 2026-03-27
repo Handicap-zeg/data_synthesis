@@ -1,0 +1,5357 @@
+{
+  "state": "error",
+  "out_path": "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/synth.jsonl",
+  "output_prefix": "synth",
+  "output_dir": "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs",
+  "planning_timeout_sec": 60.0,
+  "batch_timeout_sec": 180.0,
+  "samples": [
+    {
+      "sample_index": 1,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000081",
+              "S0000083",
+              "S0000086",
+              "S0000116",
+              "S0000115"
+            ],
+            [
+              "sem",
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000081",
+            "S0000083",
+            "S0000086",
+            "S0000116",
+            "S0000115"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773485663.025928,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773485663.0376723
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773485663.043304,
+              "duration_sec": 6.981,
+              "error": "",
+              "ended_at": 1773485670.024527
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773485670.0249062,
+              "duration_sec": 4.789,
+              "error": "",
+              "ended_at": 1773485674.813906
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773485674.8144882,
+              "duration_sec": 9.754,
+              "error": "",
+              "ended_at": 1773485684.5688133
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773485684.5692298,
+              "duration_sec": 61.136,
+              "error": "",
+              "ended_at": 1773485745.7051952,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 2,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000003",
+              "S0000013",
+              "S0000060",
+              "S0000038"
+            ],
+            [
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000003",
+            "S0000013",
+            "S0000060",
+            "S0000038"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773485745.7081392,
+              "duration_sec": 0.01,
+              "error": "",
+              "ended_at": 1773485745.7177148
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773485745.7232213,
+              "duration_sec": 5.967,
+              "error": "",
+              "ended_at": 1773485751.6899529
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773485751.6904745,
+              "duration_sec": 8.92,
+              "error": "",
+              "ended_at": 1773485760.6107605
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773485760.6113327,
+              "duration_sec": 9.228,
+              "error": "",
+              "ended_at": 1773485769.8391197
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773485769.8395998,
+              "duration_sec": 55.405,
+              "error": "",
+              "ended_at": 1773485825.2443998,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 3,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000243",
+              "S0000244",
+              "S0000248",
+              "S0000301",
+              "S0000304"
+            ],
+            [
+              "sem",
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000243",
+            "S0000244",
+            "S0000248",
+            "S0000301",
+            "S0000304"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773485825.247554,
+              "duration_sec": 0.011,
+              "error": "",
+              "ended_at": 1773485825.258769
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773485825.2638783,
+              "duration_sec": 6.421,
+              "error": "",
+              "ended_at": 1773485831.684386
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773485831.6850038,
+              "duration_sec": 4.113,
+              "error": "",
+              "ended_at": 1773485835.798216
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773485835.7988896,
+              "duration_sec": 14.761,
+              "error": "",
+              "ended_at": 1773485850.559417
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773485850.5600607,
+              "duration_sec": 40.103,
+              "error": "",
+              "ended_at": 1773485890.6629374,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 4,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000162",
+              "S0000163",
+              "S0000164"
+            ],
+            [
+              "sem",
+              "sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000162",
+            "S0000163",
+            "S0000164"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773485890.6665914,
+              "duration_sec": 0.008,
+              "error": "",
+              "ended_at": 1773485890.674494
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773485890.677543,
+              "duration_sec": 4.244,
+              "error": "",
+              "ended_at": 1773485894.9215345
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773485894.9223232,
+              "duration_sec": 3.275,
+              "error": "",
+              "ended_at": 1773485898.1973264
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773485898.1980796,
+              "duration_sec": 6.351,
+              "error": "",
+              "ended_at": 1773485904.549006
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773485904.549723,
+              "duration_sec": 39.735,
+              "error": "",
+              "ended_at": 1773485944.2851856,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 5,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "error",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000189",
+              "S0000208",
+              "S0000207",
+              "S0000200",
+              "S0000315"
+            ],
+            [
+              "pre",
+              "pre",
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000189",
+            "S0000208",
+            "S0000207",
+            "S0000200",
+            "S0000315"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773485944.2888267,
+              "duration_sec": 0.013,
+              "error": "",
+              "ended_at": 1773485944.3016787
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773485944.307558,
+              "duration_sec": 8.04,
+              "error": "",
+              "ended_at": 1773485952.3480508
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773485952.3488753,
+              "duration_sec": 4.035,
+              "error": "",
+              "ended_at": 1773485956.383744
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773485956.3845384,
+              "duration_sec": 9.766,
+              "error": "",
+              "ended_at": 1773485966.1502397
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773485966.1510253,
+              "duration_sec": 40.791,
+              "error": "batch problem contains placeholder wording",
+              "ended_at": 1773486006.9418688,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "batch problem contains placeholder wording"
+        },
+        {
+          "attempt_index": 2,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000207",
+              "S0000301",
+              "S0000304"
+            ],
+            [
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000207",
+            "S0000301",
+            "S0000304"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486006.9440582,
+              "duration_sec": 0.005,
+              "error": "",
+              "ended_at": 1773486006.949257
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486006.953193,
+              "duration_sec": 4.699,
+              "error": "",
+              "ended_at": 1773486011.652578
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486011.6534708,
+              "duration_sec": 11.791,
+              "error": "",
+              "ended_at": 1773486023.444431
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486023.4453726,
+              "duration_sec": 10.741,
+              "error": "",
+              "ended_at": 1773486034.185899
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486034.1868412,
+              "duration_sec": 63.815,
+              "error": "",
+              "ended_at": 1773486098.0020664,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 6,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000081",
+              "S0000112",
+              "S0000109"
+            ],
+            [
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000081",
+            "S0000112",
+            "S0000109"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486098.0065231,
+              "duration_sec": 0.005,
+              "error": "",
+              "ended_at": 1773486098.0114517
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486098.017698,
+              "duration_sec": 5.402,
+              "error": "",
+              "ended_at": 1773486103.4198012
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486103.4208195,
+              "duration_sec": 10.3,
+              "error": "",
+              "ended_at": 1773486113.721308
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486113.7224102,
+              "duration_sec": 11.016,
+              "error": "",
+              "ended_at": 1773486124.7381496
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486124.7391763,
+              "duration_sec": 40.293,
+              "error": "",
+              "ended_at": 1773486165.0323994,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 7,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000234",
+              "S0000246",
+              "S0000316"
+            ],
+            [
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000234",
+            "S0000246",
+            "S0000316"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486165.0372157,
+              "duration_sec": 0.006,
+              "error": "",
+              "ended_at": 1773486165.043302
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486165.0468788,
+              "duration_sec": 6.277,
+              "error": "",
+              "ended_at": 1773486171.3242037
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486171.3252974,
+              "duration_sec": 3.997,
+              "error": "",
+              "ended_at": 1773486175.3223832
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486175.3234816,
+              "duration_sec": 8.356,
+              "error": "",
+              "ended_at": 1773486183.6791968
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486183.6803806,
+              "duration_sec": 42.116,
+              "error": "",
+              "ended_at": 1773486225.7959583,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 8,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000241",
+              "S0000239",
+              "S0000300"
+            ],
+            [
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000241",
+            "S0000239",
+            "S0000300"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486225.8011298,
+              "duration_sec": 0.005,
+              "error": "",
+              "ended_at": 1773486225.8062978
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486225.8100874,
+              "duration_sec": 4.08,
+              "error": "",
+              "ended_at": 1773486229.8897977
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486229.8909926,
+              "duration_sec": 3.123,
+              "error": "",
+              "ended_at": 1773486233.0136151
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486233.0148458,
+              "duration_sec": 6.025,
+              "error": "",
+              "ended_at": 1773486239.0395448
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486239.0408063,
+              "duration_sec": 36.285,
+              "error": "",
+              "ended_at": 1773486275.3255074,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 9,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000212",
+              "S0000297",
+              "S0000304",
+              "S0000317"
+            ],
+            [
+              "main_sem",
+              "pre",
+              "sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000212",
+            "S0000297",
+            "S0000304",
+            "S0000317"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486275.3309977,
+              "duration_sec": 0.008,
+              "error": "",
+              "ended_at": 1773486275.339478
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486275.3484645,
+              "duration_sec": 7.448,
+              "error": "",
+              "ended_at": 1773486282.7964258
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486282.797986,
+              "duration_sec": 4.543,
+              "error": "",
+              "ended_at": 1773486287.340494
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486287.3418028,
+              "duration_sec": 13.176,
+              "error": "",
+              "ended_at": 1773486300.518081
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486300.5193415,
+              "duration_sec": 57.677,
+              "error": "",
+              "ended_at": 1773486358.1965451,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 10,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000243",
+              "S0000249",
+              "S0000312"
+            ],
+            [
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000243",
+            "S0000249",
+            "S0000312"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486358.202571,
+              "duration_sec": 0.006,
+              "error": "",
+              "ended_at": 1773486358.2090144
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486358.2131705,
+              "duration_sec": 5.354,
+              "error": "",
+              "ended_at": 1773486363.5675242
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486363.568936,
+              "duration_sec": 10.056,
+              "error": "",
+              "ended_at": 1773486373.6245904
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486373.6260397,
+              "duration_sec": 11.829,
+              "error": "",
+              "ended_at": 1773486385.4552946
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486385.4568596,
+              "duration_sec": 60.949,
+              "error": "",
+              "ended_at": 1773486446.4056149,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 11,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000093",
+              "S0000094",
+              "S0000134",
+              "S0000133",
+              "S0000125"
+            ],
+            [
+              "sem",
+              "main_sem",
+              "pre",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000093",
+            "S0000094",
+            "S0000134",
+            "S0000133",
+            "S0000125"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486446.4120607,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773486446.424191
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486446.4296536,
+              "duration_sec": 4.782,
+              "error": "",
+              "ended_at": 1773486451.2114441
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486451.212899,
+              "duration_sec": 5.365,
+              "error": "",
+              "ended_at": 1773486456.5778477
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486456.5794744,
+              "duration_sec": 8.149,
+              "error": "",
+              "ended_at": 1773486464.7282202
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486464.729812,
+              "duration_sec": 41.098,
+              "error": "",
+              "ended_at": 1773486505.8281686,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 12,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000231",
+              "S0000321",
+              "S0000322"
+            ],
+            [
+              "main_sem",
+              "sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000231",
+            "S0000321",
+            "S0000322"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486505.8350475,
+              "duration_sec": 0.006,
+              "error": "",
+              "ended_at": 1773486505.8408022
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486505.8456657,
+              "duration_sec": 4.051,
+              "error": "",
+              "ended_at": 1773486509.896857
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486509.8984334,
+              "duration_sec": 3.089,
+              "error": "",
+              "ended_at": 1773486512.9879122
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486512.9895823,
+              "duration_sec": 7.794,
+              "error": "",
+              "ended_at": 1773486520.7838414
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486520.7854507,
+              "duration_sec": 46.081,
+              "error": "",
+              "ended_at": 1773486566.8668232,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 13,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000044",
+              "S0000046",
+              "S0000043",
+              "S0000063",
+              "S0000049"
+            ],
+            [
+              "pre",
+              "pre",
+              "pre",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000044",
+            "S0000046",
+            "S0000043",
+            "S0000063",
+            "S0000049"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486566.875454,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773486566.8875535
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486566.8954186,
+              "duration_sec": 6.418,
+              "error": "",
+              "ended_at": 1773486573.3137596
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486573.3154786,
+              "duration_sec": 4.287,
+              "error": "",
+              "ended_at": 1773486577.6025193
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486577.6041954,
+              "duration_sec": 9.283,
+              "error": "",
+              "ended_at": 1773486586.8875184
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486586.889197,
+              "duration_sec": 48.207,
+              "error": "",
+              "ended_at": 1773486635.0960279,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 14,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000012",
+              "S0000022",
+              "S0000023",
+              "S0000036",
+              "S0000038"
+            ],
+            [
+              "sem",
+              "pre",
+              "main_sem",
+              "sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000012",
+            "S0000022",
+            "S0000023",
+            "S0000036",
+            "S0000038"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486635.1037138,
+              "duration_sec": 0.014,
+              "error": "",
+              "ended_at": 1773486635.117978
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486635.1266599,
+              "duration_sec": 5.049,
+              "error": "",
+              "ended_at": 1773486640.175495
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486640.177257,
+              "duration_sec": 4.452,
+              "error": "",
+              "ended_at": 1773486644.6289544
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486644.630741,
+              "duration_sec": 9.655,
+              "error": "",
+              "ended_at": 1773486654.286038
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486654.28783,
+              "duration_sec": 51.968,
+              "error": "",
+              "ended_at": 1773486706.2554047,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 15,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000005",
+              "S0000012",
+              "S0000018"
+            ],
+            [
+              "pre",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000005",
+            "S0000012",
+            "S0000018"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486706.2633197,
+              "duration_sec": 0.006,
+              "error": "",
+              "ended_at": 1773486706.2690272
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486706.275746,
+              "duration_sec": 3.934,
+              "error": "",
+              "ended_at": 1773486710.2100747
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486710.2120395,
+              "duration_sec": 15.926,
+              "error": "",
+              "ended_at": 1773486726.1379752
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486726.1399276,
+              "duration_sec": 8.598,
+              "error": "",
+              "ended_at": 1773486734.738254
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486734.7401717,
+              "duration_sec": 37.51,
+              "error": "",
+              "ended_at": 1773486772.2500935,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 16,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000242",
+              "S0000250",
+              "S0000267",
+              "S0000258"
+            ],
+            [
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000242",
+            "S0000250",
+            "S0000267",
+            "S0000258"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486772.258197,
+              "duration_sec": 0.009,
+              "error": "",
+              "ended_at": 1773486772.2667196
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486772.2716985,
+              "duration_sec": 5.731,
+              "error": "",
+              "ended_at": 1773486778.0031357
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486778.0050898,
+              "duration_sec": 3.919,
+              "error": "",
+              "ended_at": 1773486781.9237733
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486781.925742,
+              "duration_sec": 7.011,
+              "error": "",
+              "ended_at": 1773486788.936503
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486788.9385498,
+              "duration_sec": 65.677,
+              "error": "",
+              "ended_at": 1773486854.615235,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 17,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "error",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000080",
+              "S0000096",
+              "S0000118",
+              "S0000119"
+            ],
+            [
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000080",
+            "S0000096",
+            "S0000118",
+            "S0000119"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486854.6242032,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773486854.6364114
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486854.6475902,
+              "duration_sec": 8.761,
+              "error": "",
+              "ended_at": 1773486863.409
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486863.4110625,
+              "duration_sec": 13.593,
+              "error": "",
+              "ended_at": 1773486877.0042715
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486877.006935,
+              "duration_sec": 14.489,
+              "error": "",
+              "ended_at": 1773486891.4954703
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773486891.4975433,
+              "duration_sec": 60.464,
+              "error": "batch problem contains placeholder wording",
+              "ended_at": 1773486951.9613779,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "batch problem contains placeholder wording"
+        },
+        {
+          "attempt_index": 2,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000078",
+              "S0000083",
+              "S0000086"
+            ],
+            [
+              "pre",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000078",
+            "S0000083",
+            "S0000086"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773486951.966974,
+              "duration_sec": 0.007,
+              "error": "",
+              "ended_at": 1773486951.973995
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773486951.9821408,
+              "duration_sec": 4.351,
+              "error": "",
+              "ended_at": 1773486956.3327916
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773486956.3349566,
+              "duration_sec": 3.609,
+              "error": "",
+              "ended_at": 1773486959.9435856
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773486959.9456666,
+              "duration_sec": 7.183,
+              "error": "",
+              "ended_at": 1773486967.1289802
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773486967.1311233,
+              "duration_sec": 41.32,
+              "error": "",
+              "ended_at": 1773487008.4513564,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 18,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "error",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000037",
+              "S0000036",
+              "S0000038",
+              "S0000114",
+              "S0000143"
+            ],
+            [
+              "pre",
+              "sem",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000037",
+            "S0000036",
+            "S0000038",
+            "S0000114",
+            "S0000143"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487008.4611576,
+              "duration_sec": 0.013,
+              "error": "",
+              "ended_at": 1773487008.473814
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487008.4808385,
+              "duration_sec": 5.303,
+              "error": "",
+              "ended_at": 1773487013.784092
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487013.7863626,
+              "duration_sec": 4.642,
+              "error": "",
+              "ended_at": 1773487018.428295
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487018.430595,
+              "duration_sec": 10.151,
+              "error": "",
+              "ended_at": 1773487028.5820146
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773487028.58437,
+              "duration_sec": 49.678,
+              "error": "batch item too close to seed",
+              "ended_at": 1773487078.2628486,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "batch item too close to seed"
+        },
+        {
+          "attempt_index": 2,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000174",
+              "S0000175",
+              "S0000176"
+            ],
+            [
+              "sem",
+              "sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000174",
+            "S0000175",
+            "S0000176"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487078.2690098,
+              "duration_sec": 0.008,
+              "error": "",
+              "ended_at": 1773487078.2769787
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487078.280872,
+              "duration_sec": 4.455,
+              "error": "",
+              "ended_at": 1773487082.7359738
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487082.7383513,
+              "duration_sec": 3.532,
+              "error": "",
+              "ended_at": 1773487086.2708244
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487086.2731912,
+              "duration_sec": 5.48,
+              "error": "",
+              "ended_at": 1773487091.7532825
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773487091.755671,
+              "duration_sec": 39.766,
+              "error": "",
+              "ended_at": 1773487131.5218139,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 19,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000041",
+              "S0000141",
+              "S0000142",
+              "S0000143",
+              "S0000125"
+            ],
+            [
+              "main_sem",
+              "sem",
+              "pre",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000041",
+            "S0000141",
+            "S0000142",
+            "S0000143",
+            "S0000125"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487131.5317962,
+              "duration_sec": 0.011,
+              "error": "",
+              "ended_at": 1773487131.5424447
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487131.5494695,
+              "duration_sec": 5.376,
+              "error": "",
+              "ended_at": 1773487136.9255068
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487136.9279873,
+              "duration_sec": 4.628,
+              "error": "",
+              "ended_at": 1773487141.5558531
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487141.558303,
+              "duration_sec": 10.041,
+              "error": "",
+              "ended_at": 1773487151.5997975
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773487151.6022253,
+              "duration_sec": 45.738,
+              "error": "",
+              "ended_at": 1773487197.3403044,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 20,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "error",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000228",
+              "S0000229",
+              "S0000230",
+              "S0000297",
+              "S0000304"
+            ],
+            [
+              "sem",
+              "sem",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000228",
+            "S0000229",
+            "S0000230",
+            "S0000297",
+            "S0000304"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487197.350758,
+              "duration_sec": 0.014,
+              "error": "",
+              "ended_at": 1773487197.364774
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487197.3744411,
+              "duration_sec": 7.116,
+              "error": "",
+              "ended_at": 1773487204.4899786
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487204.4925346,
+              "duration_sec": 3.832,
+              "error": "",
+              "ended_at": 1773487208.3248537
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487208.3274171,
+              "duration_sec": 7.889,
+              "error": "",
+              "ended_at": 1773487216.2167099
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773487216.2192695,
+              "duration_sec": 51.247,
+              "error": "batch problem contains placeholder wording",
+              "ended_at": 1773487267.4659433,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "batch problem contains placeholder wording"
+        },
+        {
+          "attempt_index": 2,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000080",
+              "S0000142",
+              "S0000143"
+            ],
+            [
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000080",
+            "S0000142",
+            "S0000143"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487267.4729176,
+              "duration_sec": 0.007,
+              "error": "",
+              "ended_at": 1773487267.480189
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487267.491734,
+              "duration_sec": 13.826,
+              "error": "",
+              "ended_at": 1773487281.3173952
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487281.3199964,
+              "duration_sec": 8.523,
+              "error": "",
+              "ended_at": 1773487289.8433104
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487289.8459282,
+              "duration_sec": 18.981,
+              "error": "",
+              "ended_at": 1773487308.8270736
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773487308.8297255,
+              "duration_sec": 44.338,
+              "error": "",
+              "ended_at": 1773487353.1672647,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 21,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000053",
+              "S0000055",
+              "S0000105"
+            ],
+            [
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000053",
+            "S0000055",
+            "S0000105"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487353.1787608,
+              "duration_sec": 0.006,
+              "error": "",
+              "ended_at": 1773487353.1848388
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487353.189585,
+              "duration_sec": 4.054,
+              "error": "",
+              "ended_at": 1773487357.243367
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487357.2461033,
+              "duration_sec": 3.868,
+              "error": "",
+              "ended_at": 1773487361.1140242
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487361.116756,
+              "duration_sec": 3.139,
+              "error": "",
+              "ended_at": 1773487364.2553916
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773487364.2589025,
+              "duration_sec": 43.68,
+              "error": "",
+              "ended_at": 1773487407.9384596,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 22,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000000",
+              "S0000001",
+              "S0000046",
+              "S0000047"
+            ],
+            [
+              "sem",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000000",
+            "S0000001",
+            "S0000046",
+            "S0000047"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487407.9496524,
+              "duration_sec": 0.01,
+              "error": "",
+              "ended_at": 1773487407.9593117
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487407.9665415,
+              "duration_sec": 4.678,
+              "error": "",
+              "ended_at": 1773487412.6442103
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487412.6470249,
+              "duration_sec": 5.548,
+              "error": "",
+              "ended_at": 1773487418.195518
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487418.198393,
+              "duration_sec": 8.41,
+              "error": "",
+              "ended_at": 1773487426.6084654
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773487426.611325,
+              "duration_sec": 52.583,
+              "error": "",
+              "ended_at": 1773487479.194565,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 23,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000254",
+              "S0000275",
+              "S0000271"
+            ],
+            [
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000254",
+            "S0000275",
+            "S0000271"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487479.2063847,
+              "duration_sec": 0.007,
+              "error": "",
+              "ended_at": 1773487479.2131033
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487479.217964,
+              "duration_sec": 3.785,
+              "error": "",
+              "ended_at": 1773487483.0033655
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487483.006265,
+              "duration_sec": 3.471,
+              "error": "",
+              "ended_at": 1773487486.4775171
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487486.4804313,
+              "duration_sec": 6.04,
+              "error": "",
+              "ended_at": 1773487492.520757
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773487492.523749,
+              "duration_sec": 42.335,
+              "error": "",
+              "ended_at": 1773487534.858968,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 24,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000205",
+              "S0000223",
+              "S0000300"
+            ],
+            [
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000205",
+            "S0000223",
+            "S0000300"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487534.871226,
+              "duration_sec": 0.006,
+              "error": "",
+              "ended_at": 1773487534.8769646
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487534.882067,
+              "duration_sec": 3.291,
+              "error": "",
+              "ended_at": 1773487538.1733627
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487538.1765816,
+              "duration_sec": 3.036,
+              "error": "",
+              "ended_at": 1773487541.212766
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487541.2158384,
+              "duration_sec": 6.013,
+              "error": "",
+              "ended_at": 1773487547.2291281
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773487547.2322295,
+              "duration_sec": 39.833,
+              "error": "",
+              "ended_at": 1773487587.0650487,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 25,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "error",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000035",
+              "S0000134",
+              "S0000125"
+            ],
+            [
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000035",
+            "S0000134",
+            "S0000125"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487587.0775063,
+              "duration_sec": 0.006,
+              "error": "",
+              "ended_at": 1773487587.083925
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487587.0907092,
+              "duration_sec": 3.503,
+              "error": "",
+              "ended_at": 1773487590.5935838
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487590.5967975,
+              "duration_sec": 3.616,
+              "error": "",
+              "ended_at": 1773487594.2128112
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487594.2159796,
+              "duration_sec": 6.903,
+              "error": "",
+              "ended_at": 1773487601.118992
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773487601.1220882,
+              "duration_sec": 49.449,
+              "error": "batch problem contains placeholder wording",
+              "ended_at": 1773487650.5708199,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "batch problem contains placeholder wording"
+        },
+        {
+          "attempt_index": 2,
+          "state": "ok",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000196",
+              "S0000195",
+              "S0000324",
+              "S0000326",
+              "S0000325"
+            ],
+            [
+              "pre",
+              "main_sem",
+              "sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000196",
+            "S0000195",
+            "S0000324",
+            "S0000326",
+            "S0000325"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487650.579833,
+              "duration_sec": 0.01,
+              "error": "",
+              "ended_at": 1773487650.5899742
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487650.5961592,
+              "duration_sec": 6.838,
+              "error": "",
+              "ended_at": 1773487657.4342246
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487657.4375565,
+              "duration_sec": 8.428,
+              "error": "",
+              "ended_at": 1773487665.866002
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487665.8691714,
+              "duration_sec": 14.518,
+              "error": "",
+              "ended_at": 1773487680.3874056
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773487680.3906407,
+              "duration_sec": 68.537,
+              "error": "",
+              "ended_at": 1773487748.927976,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 26,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "error",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000226",
+              "S0000232",
+              "S0000233",
+              "S0000307",
+              "S0000320"
+            ],
+            [
+              "sem",
+              "sem",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000226",
+            "S0000232",
+            "S0000233",
+            "S0000307",
+            "S0000320"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487748.9411144,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773487748.9536018
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487748.962892,
+              "duration_sec": 25.372,
+              "error": "",
+              "ended_at": 1773487774.3352966
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487774.3385623,
+              "duration_sec": 4.653,
+              "error": "",
+              "ended_at": 1773487778.9913218
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487778.994644,
+              "duration_sec": 11.037,
+              "error": "",
+              "ended_at": 1773487790.0321226
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773487790.0354488,
+              "duration_sec": 39.307,
+              "error": "batch seed coverage too low: used 9 < required 10; missing examples: ['MATH_0000792', 'MATH_0000793', 'MATH_0000848', 'MATH_0001517', 'MATH_0001878', 'MATH_0003163', 'MATH_0003172', 'MATH_0003180', 'MATH_0003327', 'MATH_0003366', 'MATH_0003402', 'MATH_0003420', 'MATH_0004141', 'MATH_0006277', 'MATH_0006292', 'MATH_0006307', 'MATH_0007095', 'MATH_0007309']",
+              "ended_at": 1773487829.3422637,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "batch seed coverage too low: used 9 < required 10; missing examples: ['MATH_0000792', 'MATH_0000793', 'MATH_0000848', 'MATH_0001517', 'MATH_0001878', 'MATH_0003163', 'MATH_0003172', 'MATH_0003180', 'MATH_0003327', 'MATH_0003366', 'MATH_0003402', 'MATH_0003420', 'MATH_0004141', 'MATH_0006277', 'MATH_0006292', 'MATH_0006307', 'MATH_0007095', 'MATH_0007309']"
+        },
+        {
+          "attempt_index": 2,
+          "state": "error",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000088",
+              "S0000083",
+              "S0000086",
+              "S0000116",
+              "S0000115"
+            ],
+            [
+              "pre",
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000088",
+            "S0000083",
+            "S0000086",
+            "S0000116",
+            "S0000115"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487829.3513467,
+              "duration_sec": 0.013,
+              "error": "",
+              "ended_at": 1773487829.3645844
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487829.372694,
+              "duration_sec": 5.144,
+              "error": "",
+              "ended_at": 1773487834.51684
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487834.5202262,
+              "duration_sec": 4.176,
+              "error": "",
+              "ended_at": 1773487838.6958907
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487838.6992307,
+              "duration_sec": 9.356,
+              "error": "",
+              "ended_at": 1773487848.0547893
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773487848.0583246,
+              "duration_sec": 52.199,
+              "error": "batch problem contains placeholder wording",
+              "ended_at": 1773487900.2573118,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "batch problem contains placeholder wording"
+        },
+        {
+          "attempt_index": 3,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000039",
+              "S0000145",
+              "S0000135",
+              "S0000125"
+            ],
+            [
+              "main_sem",
+              "pre",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000039",
+            "S0000145",
+            "S0000135",
+            "S0000125"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487900.2680287,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773487900.2796717
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487900.2869744,
+              "duration_sec": 5.428,
+              "error": "",
+              "ended_at": 1773487905.7150033
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487905.7184565,
+              "duration_sec": 4.407,
+              "error": "",
+              "ended_at": 1773487910.125116
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487910.1289666,
+              "duration_sec": 10.895,
+              "error": "",
+              "ended_at": 1773487921.0244062
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773487921.027826,
+              "duration_sec": 58.399,
+              "error": "",
+              "ended_at": 1773487979.4271514,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 27,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000003",
+              "S0000013",
+              "S0000060"
+            ],
+            [
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000003",
+            "S0000013",
+            "S0000060"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773487979.4413292,
+              "duration_sec": 0.008,
+              "error": "",
+              "ended_at": 1773487979.448847
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773487979.4561555,
+              "duration_sec": 5.464,
+              "error": "",
+              "ended_at": 1773487984.9204748
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773487984.9240375,
+              "duration_sec": 3.114,
+              "error": "",
+              "ended_at": 1773487988.037691
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773487988.0412273,
+              "duration_sec": 9.471,
+              "error": "",
+              "ended_at": 1773487997.5123532
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773487997.5173073,
+              "duration_sec": 45.771,
+              "error": "",
+              "ended_at": 1773488043.2883701,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 28,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000235",
+              "S0000273",
+              "S0000275",
+              "S0000271"
+            ],
+            [
+              "main_sem",
+              "sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000235",
+            "S0000273",
+            "S0000275",
+            "S0000271"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488043.302824,
+              "duration_sec": 0.011,
+              "error": "",
+              "ended_at": 1773488043.313956
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488043.3203368,
+              "duration_sec": 5.188,
+              "error": "",
+              "ended_at": 1773488048.5085647
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488048.5121646,
+              "duration_sec": 3.144,
+              "error": "",
+              "ended_at": 1773488051.6557229
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488051.6593688,
+              "duration_sec": 11.934,
+              "error": "",
+              "ended_at": 1773488063.5938044
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488063.5974467,
+              "duration_sec": 42.988,
+              "error": "",
+              "ended_at": 1773488106.5852942,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 29,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000243",
+              "S0000245",
+              "S0000297",
+              "S0000304"
+            ],
+            [
+              "sem",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000243",
+            "S0000245",
+            "S0000297",
+            "S0000304"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488106.600397,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773488106.6128898
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488106.623203,
+              "duration_sec": 10.705,
+              "error": "",
+              "ended_at": 1773488117.3278923
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488117.3316035,
+              "duration_sec": 4.756,
+              "error": "",
+              "ended_at": 1773488122.088069
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488122.0919302,
+              "duration_sec": 25.225,
+              "error": "",
+              "ended_at": 1773488147.3173544
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488147.321093,
+              "duration_sec": 56.622,
+              "error": "",
+              "ended_at": 1773488203.9429712,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 30,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000211",
+              "S0000297",
+              "S0000304"
+            ],
+            [
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000211",
+            "S0000297",
+            "S0000304"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488203.9583068,
+              "duration_sec": 0.008,
+              "error": "",
+              "ended_at": 1773488203.9658551
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488203.975908,
+              "duration_sec": 6.044,
+              "error": "",
+              "ended_at": 1773488210.020188
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488210.0240724,
+              "duration_sec": 2.967,
+              "error": "",
+              "ended_at": 1773488212.9915338
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488212.995325,
+              "duration_sec": 13.126,
+              "error": "",
+              "ended_at": 1773488226.1215672
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488226.125875,
+              "duration_sec": 44.122,
+              "error": "",
+              "ended_at": 1773488270.247644,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 31,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "error",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000208",
+              "S0000207",
+              "S0000200"
+            ],
+            [
+              "pre",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000208",
+            "S0000207",
+            "S0000200"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488270.26328,
+              "duration_sec": 0.009,
+              "error": "",
+              "ended_at": 1773488270.2720296
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488270.279264,
+              "duration_sec": 4.043,
+              "error": "",
+              "ended_at": 1773488274.3220325
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488274.3260565,
+              "duration_sec": 2.74,
+              "error": "",
+              "ended_at": 1773488277.0661206
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488277.0701432,
+              "duration_sec": 6.855,
+              "error": "",
+              "ended_at": 1773488283.9254546
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773488283.9295514,
+              "duration_sec": 43.505,
+              "error": "invalid batch problem",
+              "ended_at": 1773488327.4349856,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "invalid batch problem"
+        },
+        {
+          "attempt_index": 2,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000083",
+              "S0000086",
+              "S0000116"
+            ],
+            [
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000083",
+            "S0000086",
+            "S0000116"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488327.4462144,
+              "duration_sec": 0.008,
+              "error": "",
+              "ended_at": 1773488327.4541037
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488327.4610868,
+              "duration_sec": 4.825,
+              "error": "",
+              "ended_at": 1773488332.286336
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488332.2903333,
+              "duration_sec": 3.647,
+              "error": "",
+              "ended_at": 1773488335.9368582
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488335.940959,
+              "duration_sec": 8.328,
+              "error": "",
+              "ended_at": 1773488344.2694254
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488344.2735627,
+              "duration_sec": 42.449,
+              "error": "",
+              "ended_at": 1773488386.7226043,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 32,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000187",
+              "S0000198",
+              "S0000322",
+              "S0000309"
+            ],
+            [
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000187",
+            "S0000198",
+            "S0000322",
+            "S0000309"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488386.7390635,
+              "duration_sec": 0.01,
+              "error": "",
+              "ended_at": 1773488386.7493796
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488386.757383,
+              "duration_sec": 4.758,
+              "error": "",
+              "ended_at": 1773488391.5154688
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488391.5197008,
+              "duration_sec": 3.971,
+              "error": "",
+              "ended_at": 1773488395.4910133
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488395.495142,
+              "duration_sec": 10.541,
+              "error": "",
+              "ended_at": 1773488406.0359125
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488406.040187,
+              "duration_sec": 44.414,
+              "error": "",
+              "ended_at": 1773488450.454681,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 33,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000082",
+              "S0000083",
+              "S0000086",
+              "S0000116"
+            ],
+            [
+              "sem",
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000082",
+            "S0000083",
+            "S0000086",
+            "S0000116"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488450.4730332,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773488450.4853284
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488450.4935825,
+              "duration_sec": 5.505,
+              "error": "",
+              "ended_at": 1773488455.9988258
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488456.0033212,
+              "duration_sec": 3.948,
+              "error": "",
+              "ended_at": 1773488459.9510274
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488459.955298,
+              "duration_sec": 10.34,
+              "error": "",
+              "ended_at": 1773488470.2957833
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488470.300029,
+              "duration_sec": 52.155,
+              "error": "",
+              "ended_at": 1773488522.4548342,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 34,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000011",
+              "S0000002",
+              "S0000054"
+            ],
+            [
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000011",
+            "S0000002",
+            "S0000054"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488522.4722412,
+              "duration_sec": 0.008,
+              "error": "",
+              "ended_at": 1773488522.479984
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488522.4862423,
+              "duration_sec": 6.124,
+              "error": "",
+              "ended_at": 1773488528.6105595
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488528.614823,
+              "duration_sec": 2.77,
+              "error": "",
+              "ended_at": 1773488531.3849726
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488531.3892787,
+              "duration_sec": 11.053,
+              "error": "",
+              "ended_at": 1773488542.441991
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488542.4463289,
+              "duration_sec": 43.73,
+              "error": "",
+              "ended_at": 1773488586.1766067,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 35,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000191",
+              "S0000324",
+              "S0000326",
+              "S0000325"
+            ],
+            [
+              "main_sem",
+              "sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000191",
+            "S0000324",
+            "S0000326",
+            "S0000325"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488586.1941836,
+              "duration_sec": 0.014,
+              "error": "",
+              "ended_at": 1773488586.2080393
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488586.215289,
+              "duration_sec": 12.924,
+              "error": "",
+              "ended_at": 1773488599.1392012
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488599.1436238,
+              "duration_sec": 9.441,
+              "error": "",
+              "ended_at": 1773488608.5842676
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488608.5888326,
+              "duration_sec": 7.82,
+              "error": "",
+              "ended_at": 1773488616.4090295
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488616.4134393,
+              "duration_sec": 42.907,
+              "error": "",
+              "ended_at": 1773488659.3207183,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 36,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000183",
+              "S0000208",
+              "S0000207",
+              "S0000200"
+            ],
+            [
+              "sem",
+              "pre",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000183",
+            "S0000208",
+            "S0000207",
+            "S0000200"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488659.3387218,
+              "duration_sec": 0.011,
+              "error": "",
+              "ended_at": 1773488659.3500867
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488659.3585112,
+              "duration_sec": 5.135,
+              "error": "",
+              "ended_at": 1773488664.4930804
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488664.497635,
+              "duration_sec": 3.242,
+              "error": "",
+              "ended_at": 1773488667.7398467
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488667.7466495,
+              "duration_sec": 9.7,
+              "error": "",
+              "ended_at": 1773488677.446322
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488677.4508655,
+              "duration_sec": 37.37,
+              "error": "",
+              "ended_at": 1773488714.8210573,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 37,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "error",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000085",
+              "S0000086",
+              "S0000116",
+              "S0000115"
+            ],
+            [
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000085",
+            "S0000086",
+            "S0000116",
+            "S0000115"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488714.839932,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773488714.8521905
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488714.8595726,
+              "duration_sec": 3.836,
+              "error": "",
+              "ended_at": 1773488718.6952896
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488718.699976,
+              "duration_sec": 3.698,
+              "error": "",
+              "ended_at": 1773488722.3983207
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488722.4029531,
+              "duration_sec": 9.83,
+              "error": "",
+              "ended_at": 1773488732.2330265
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773488732.237707,
+              "duration_sec": 43.551,
+              "error": "batch item too close to seed",
+              "ended_at": 1773488775.7888088,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "batch item too close to seed"
+        },
+        {
+          "attempt_index": 2,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000098",
+              "S0000096",
+              "S0000118",
+              "S0000114"
+            ],
+            [
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000098",
+            "S0000096",
+            "S0000118",
+            "S0000114"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488775.8020494,
+              "duration_sec": 0.015,
+              "error": "",
+              "ended_at": 1773488775.817008
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488775.8244395,
+              "duration_sec": 8.13,
+              "error": "",
+              "ended_at": 1773488783.9548767
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488783.959784,
+              "duration_sec": 6.221,
+              "error": "",
+              "ended_at": 1773488790.1807566
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488790.1857588,
+              "duration_sec": 12.677,
+              "error": "",
+              "ended_at": 1773488802.8627384
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488802.8675818,
+              "duration_sec": 49.065,
+              "error": "",
+              "ended_at": 1773488851.9330263,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 38,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000057",
+              "S0000063",
+              "S0000049",
+              "S0000114"
+            ],
+            [
+              "pre",
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000057",
+            "S0000063",
+            "S0000049",
+            "S0000114"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488851.9523273,
+              "duration_sec": 0.011,
+              "error": "",
+              "ended_at": 1773488851.963288
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488851.9712565,
+              "duration_sec": 10.231,
+              "error": "",
+              "ended_at": 1773488862.2022796
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488862.2071354,
+              "duration_sec": 11.226,
+              "error": "",
+              "ended_at": 1773488873.4329357
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488873.4378474,
+              "duration_sec": 15.191,
+              "error": "",
+              "ended_at": 1773488888.6287339
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488888.633494,
+              "duration_sec": 55.114,
+              "error": "",
+              "ended_at": 1773488943.7473836,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 39,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000218",
+              "S0000297",
+              "S0000304",
+              "S0000317"
+            ],
+            [
+              "main_sem",
+              "pre",
+              "sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000218",
+            "S0000297",
+            "S0000304",
+            "S0000317"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773488943.7667983,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773488943.7784884
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773488943.7908044,
+              "duration_sec": 4.901,
+              "error": "",
+              "ended_at": 1773488948.6920867
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773488948.6969914,
+              "duration_sec": 4.79,
+              "error": "",
+              "ended_at": 1773488953.4865193
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773488953.4914424,
+              "duration_sec": 12.98,
+              "error": "",
+              "ended_at": 1773488966.471718
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773488966.4768054,
+              "duration_sec": 39.65,
+              "error": "",
+              "ended_at": 1773489006.1269932,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 40,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000202",
+              "S0000297",
+              "S0000304"
+            ],
+            [
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000202",
+            "S0000297",
+            "S0000304"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773489006.1465802,
+              "duration_sec": 0.01,
+              "error": "",
+              "ended_at": 1773489006.1562812
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773489006.1676588,
+              "duration_sec": 4.942,
+              "error": "",
+              "ended_at": 1773489011.1093652
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773489011.1143446,
+              "duration_sec": 2.964,
+              "error": "",
+              "ended_at": 1773489014.078413
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773489014.0833807,
+              "duration_sec": 7.397,
+              "error": "",
+              "ended_at": 1773489021.4799259
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773489021.4850824,
+              "duration_sec": 36.63,
+              "error": "",
+              "ended_at": 1773489058.1149757,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 41,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000236",
+              "S0000253",
+              "S0000297",
+              "S0000316"
+            ],
+            [
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000236",
+            "S0000253",
+            "S0000297",
+            "S0000316"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773489058.1350768,
+              "duration_sec": 0.011,
+              "error": "",
+              "ended_at": 1773489058.1464858
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773489058.1576395,
+              "duration_sec": 7.699,
+              "error": "",
+              "ended_at": 1773489065.8568425
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773489065.8619077,
+              "duration_sec": 3.844,
+              "error": "",
+              "ended_at": 1773489069.7058468
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773489069.710942,
+              "duration_sec": 11.9,
+              "error": "",
+              "ended_at": 1773489081.611198
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773489081.6164005,
+              "duration_sec": 51.643,
+              "error": "",
+              "ended_at": 1773489133.2590928,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 42,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000001",
+              "S0000046",
+              "S0000043",
+              "S0000063"
+            ],
+            [
+              "main_sem",
+              "pre",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000001",
+            "S0000046",
+            "S0000043",
+            "S0000063"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773489133.2795026,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773489133.2914646
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773489133.3023994,
+              "duration_sec": 9.338,
+              "error": "",
+              "ended_at": 1773489142.6405046
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773489142.6459298,
+              "duration_sec": 4.7,
+              "error": "",
+              "ended_at": 1773489147.3459516
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773489147.3511624,
+              "duration_sec": 9.687,
+              "error": "",
+              "ended_at": 1773489157.0381446
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773489157.0434904,
+              "duration_sec": 46.553,
+              "error": "",
+              "ended_at": 1773489203.5960202,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 43,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000007",
+              "S0000012",
+              "S0000013",
+              "S0000060",
+              "S0000038"
+            ],
+            [
+              "sem",
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000007",
+            "S0000012",
+            "S0000013",
+            "S0000060",
+            "S0000038"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773489203.6170447,
+              "duration_sec": 0.014,
+              "error": "",
+              "ended_at": 1773489203.631493
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773489203.643891,
+              "duration_sec": 5.241,
+              "error": "",
+              "ended_at": 1773489208.8844619
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773489208.8897545,
+              "duration_sec": 65.483,
+              "error": "",
+              "ended_at": 1773489274.3724654
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773489274.3777986,
+              "duration_sec": 71.124,
+              "error": "",
+              "ended_at": 1773489345.5022779
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773489345.5075154,
+              "duration_sec": 233.622,
+              "error": "",
+              "ended_at": 1773489579.129615,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 44,
+      "state": "ok",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "ok",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000221",
+              "S0000219",
+              "S0000300"
+            ],
+            [
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000221",
+            "S0000219",
+            "S0000300"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773489579.1509056,
+              "duration_sec": 0.01,
+              "error": "",
+              "ended_at": 1773489579.160827
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773489579.1675901,
+              "duration_sec": 64.479,
+              "error": "",
+              "ended_at": 1773489643.6465447
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773489643.6518433,
+              "duration_sec": 68.141,
+              "error": "",
+              "ended_at": 1773489711.7925675
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773489711.7980707,
+              "duration_sec": 66.341,
+              "error": "",
+              "ended_at": 1773489778.1392045
+            },
+            {
+              "name": "batch_generation",
+              "state": "ok",
+              "started_at": 1773489778.1446857,
+              "duration_sec": 404.428,
+              "error": "",
+              "ended_at": 1773490182.5730474,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "sample_index": 45,
+      "state": "error",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "state": "error",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000207",
+              "S0000222",
+              "S0000301",
+              "S0000304"
+            ],
+            [
+              "pre",
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000207",
+            "S0000222",
+            "S0000301",
+            "S0000304"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773490182.5942152,
+              "duration_sec": 0.015,
+              "error": "",
+              "ended_at": 1773490182.6094892
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773490182.618009,
+              "duration_sec": 185.11,
+              "error": "",
+              "ended_at": 1773490367.7277255
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773490367.7342126,
+              "duration_sec": 182.942,
+              "error": "",
+              "ended_at": 1773490550.6765745
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773490550.6824667,
+              "duration_sec": 183.113,
+              "error": "",
+              "ended_at": 1773490733.7956934
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773490733.8014684,
+              "duration_sec": 1628.966,
+              "error": "LLM request failed: Request timed out.",
+              "ended_at": 1773492362.7674096,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "LLM request failed: Request timed out."
+        },
+        {
+          "attempt_index": 2,
+          "state": "error",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000014",
+              "S0000012",
+              "S0000018",
+              "S0000077"
+            ],
+            [
+              "pre",
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000014",
+            "S0000012",
+            "S0000018",
+            "S0000077"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773492362.7839053,
+              "duration_sec": 0.013,
+              "error": "",
+              "ended_at": 1773492362.7967181
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773492362.8090155,
+              "duration_sec": 59.43,
+              "error": "",
+              "ended_at": 1773492422.2385464
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773492422.2445364,
+              "duration_sec": 4.61,
+              "error": "",
+              "ended_at": 1773492426.8549902
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773492426.8608773,
+              "duration_sec": 3.733,
+              "error": "",
+              "ended_at": 1773492430.593855
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773492430.59967,
+              "duration_sec": 12.755,
+              "error": "LLM request failed: Error code: 502 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}",
+              "ended_at": 1773492443.355006,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "LLM request failed: Error code: 502 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}"
+        },
+        {
+          "attempt_index": 3,
+          "state": "error",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000019",
+              "S0000012",
+              "S0000018"
+            ],
+            [
+              "pre",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000019",
+            "S0000012",
+            "S0000018"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773492443.3711245,
+              "duration_sec": 0.01,
+              "error": "",
+              "ended_at": 1773492443.3806782
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773492443.3911574,
+              "duration_sec": 3.103,
+              "error": "",
+              "ended_at": 1773492446.4940276
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773492446.4999979,
+              "duration_sec": 3.07,
+              "error": "",
+              "ended_at": 1773492449.5704942
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773492449.5762205,
+              "duration_sec": 3.018,
+              "error": "",
+              "ended_at": 1773492452.5943332
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773492452.5997305,
+              "duration_sec": 14.01,
+              "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}",
+              "ended_at": 1773492466.6093807,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}"
+        },
+        {
+          "attempt_index": 4,
+          "state": "error",
+          "target_len": 3,
+          "chain_sig": [
+            [
+              "S0000237",
+              "S0000239",
+              "S0000300"
+            ],
+            [
+              "sem",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000237",
+            "S0000239",
+            "S0000300"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773492466.6258895,
+              "duration_sec": 0.01,
+              "error": "",
+              "ended_at": 1773492466.6355813
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773492466.6430008,
+              "duration_sec": 3.435,
+              "error": "",
+              "ended_at": 1773492470.0779982
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773492470.084224,
+              "duration_sec": 3.253,
+              "error": "",
+              "ended_at": 1773492473.3373384
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773492473.3435724,
+              "duration_sec": 3.922,
+              "error": "",
+              "ended_at": 1773492477.2655206
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773492477.2718399,
+              "duration_sec": 12.31,
+              "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}",
+              "ended_at": 1773492489.5813687,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}"
+        },
+        {
+          "attempt_index": 5,
+          "state": "error",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000070",
+              "S0000116",
+              "S0000110"
+            ],
+            [
+              "main_sem",
+              "pre"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000070",
+            "S0000116",
+            "S0000110"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773492489.598027,
+              "duration_sec": 0.012,
+              "error": "",
+              "ended_at": 1773492489.609638
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773492489.6182942,
+              "duration_sec": 3.433,
+              "error": "",
+              "ended_at": 1773492493.0515733
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773492493.0588324,
+              "duration_sec": 3.687,
+              "error": "",
+              "ended_at": 1773492496.7456727
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773492496.7519963,
+              "duration_sec": 3.539,
+              "error": "",
+              "ended_at": 1773492500.2914639
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773492500.2976449,
+              "duration_sec": 12.232,
+              "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}",
+              "ended_at": 1773492512.5293922,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}"
+        },
+        {
+          "attempt_index": 6,
+          "state": "error",
+          "target_len": 5,
+          "chain_sig": [
+            [
+              "S0000306",
+              "S0000320"
+            ],
+            [
+              "sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000306",
+            "S0000320"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773492512.546401,
+              "duration_sec": 0.017,
+              "error": "",
+              "ended_at": 1773492512.563727
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773492512.5732388,
+              "duration_sec": 3.398,
+              "error": "",
+              "ended_at": 1773492515.970821
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773492515.9771948,
+              "duration_sec": 3.1,
+              "error": "",
+              "ended_at": 1773492519.0771198
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773492519.0833943,
+              "duration_sec": 3.225,
+              "error": "",
+              "ended_at": 1773492522.3083496
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773492522.314459,
+              "duration_sec": 12.692,
+              "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}",
+              "ended_at": 1773492535.00638,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}"
+        },
+        {
+          "attempt_index": 7,
+          "state": "error",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000208",
+              "S0000207",
+              "S0000200",
+              "S0000315"
+            ],
+            [
+              "pre",
+              "pre",
+              "main_sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000208",
+            "S0000207",
+            "S0000200",
+            "S0000315"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773492535.02332,
+              "duration_sec": 0.014,
+              "error": "",
+              "ended_at": 1773492535.0371916
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773492535.0471811,
+              "duration_sec": 4.029,
+              "error": "",
+              "ended_at": 1773492539.0760906
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773492539.0825572,
+              "duration_sec": 3.837,
+              "error": "",
+              "ended_at": 1773492542.9193442
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773492542.925498,
+              "duration_sec": 4.159,
+              "error": "",
+              "ended_at": 1773492547.0842664
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773492547.0908139,
+              "duration_sec": 14.648,
+              "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}",
+              "ended_at": 1773492561.7388413,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}"
+        },
+        {
+          "attempt_index": 8,
+          "state": "error",
+          "target_len": 4,
+          "chain_sig": [
+            [
+              "S0000192",
+              "S0000297",
+              "S0000304",
+              "S0000317"
+            ],
+            [
+              "main_sem",
+              "pre",
+              "sem"
+            ]
+          ],
+          "chain_nodes": [
+            "S0000192",
+            "S0000297",
+            "S0000304",
+            "S0000317"
+          ],
+          "stages": [
+            {
+              "name": "chain_search",
+              "state": "ok",
+              "started_at": 1773492561.756222,
+              "duration_sec": 0.014,
+              "error": "",
+              "ended_at": 1773492561.7697756
+            },
+            {
+              "name": "mechanism_plan",
+              "state": "ok",
+              "started_at": 1773492561.7835119,
+              "duration_sec": 4.106,
+              "error": "",
+              "ended_at": 1773492565.889358
+            },
+            {
+              "name": "blueprint",
+              "state": "ok",
+              "started_at": 1773492565.8956137,
+              "duration_sec": 3.694,
+              "error": "",
+              "ended_at": 1773492569.5892842
+            },
+            {
+              "name": "seed_usage_plan",
+              "state": "ok",
+              "started_at": 1773492569.5958838,
+              "duration_sec": 4.058,
+              "error": "",
+              "ended_at": 1773492573.6538494
+            },
+            {
+              "name": "batch_generation",
+              "state": "error",
+              "started_at": 1773492573.6602643,
+              "duration_sec": 13.642,
+              "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}",
+              "ended_at": 1773492587.3025675,
+              "debug": {
+                "expected_total": 10,
+                "returned_item_count": 10,
+                "returned_slot_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
+            }
+          ],
+          "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}"
+        }
+      ],
+      "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}"
+    }
+  ],
+  "generated_rows": 440,
+  "current_shard": "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/synth_25.jsonl",
+  "current_shard_rows": 40,
+  "touched_shards": [
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/synth_21.jsonl",
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/synth_22.jsonl",
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/synth_23.jsonl",
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/synth_24.jsonl",
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/synth_25.jsonl"
+  ],
+  "error": "LLM request failed: Error code: 503 - {'error': {'message': 'openai_error', 'type': 'bad_response_status_code', 'param': '', 'code': 'bad_response_status_code'}}"
+}

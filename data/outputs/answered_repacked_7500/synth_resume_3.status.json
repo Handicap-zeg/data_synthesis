@@ -1,0 +1,195 @@
+{
+  "state": "ok_with_errors",
+  "model": "",
+  "easy_model": "gemini-3-flash-preview",
+  "medium_model": "gemini-3-flash-preview",
+  "hard_model": "gemini-3-flash-preview",
+  "base_url": "http://123.129.219.111:3000/v1",
+  "input_files": [
+    "/tmp/step11_prod_splits/synth_rem_3.jsonl"
+  ],
+  "requested_rows": 1212,
+  "completed_rows": 210,
+  "failed_rows": 1002,
+  "current_shard": "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_3_03.jsonl",
+  "current_shard_rows": 6,
+  "touched_shards": [
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_3_01.jsonl",
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_3_02.jsonl",
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_3_03.jsonl"
+  ],
+  "error": "",
+  "recent_errors": [
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Find all real numbers \\( x \\) within the interval \\([0, 2\\pi]\\) that satisfy the equation \\( \\lfloor x \\rfloor + \\sin(x) = 3 \\).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014947114726935HlfzVQn)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Consider the trigonometric equation: sin(x) + cos(y) = 1, where x is in the interval [0, π/2] and y is in the interval [0, π/2]. Introduce a new constraint: x + y = π/3. Determine the maximum value of the expression x^2 + y^2.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014947253894823xQunBoaQ)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Given the polynomial \\( P(x) = 2x^5 - 3x^4 + x^3 - 5x^2 + 4x - 6 \\) and the divisor \\( D(x) = x^3 - 2x^2 + x - 1 \\), determine the possible degrees of the remainder \\( R(x) \\) when \\( P(x) \\) is divided by \\( D(x) \\).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014947772989773ykW3Q8ax)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Calculate the area of the region bounded by the circle (x-1)^2 + y^2 = 16 and the hyperbola xy = 4.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_request_error: timed out"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Two transportation methods are available for a trip: Method A for the first leg and Method B for the second leg. Method A costs $0.50 per kilometer with a $20 booking fee, and Method B costs $0.40 per kilometer with a $15 booking fee. The f",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015148332223327eFPwbJTd)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Find the critical points of the function f(x, y) = x^2 + y^2 - 4xy + 3 subject to the constraint g(x, y) = sin(x) + cos(y) = 0 within the interval [0, π].",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 202603260151487882187986ji71pJ3)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Find the values of x for which the expression $$\\frac{2x^3+3}{x^2-20x+100}$$ is defined.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015149217658461aVfea8lt)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Calculate the probability of drawing a card from a standard deck of 52 cards that has a rank number which is a multiple of any number in the set {3, 5, 7}.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015149618686892n60XwiSo)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "A set of integers from 1 to 10 is given. Calculate the expected value of a random variable X representing the selected integer, using forced case splits.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 2026032601515098518639esw11YFC)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Find the probability that point P is within two units of the origin, given it is selected uniformly at random from a square region centered at the origin with side length 4 units.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015150334675726t6gSCpL6)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Calculate the determinant of the matrix \\( A = \\begin{bmatrix} \\cos(x) & \\sin(x) & 1 \\\\ -\\sin(x) & \\cos(x) & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\) using row operations, where \\( x \\) is within the interval \\([0, 2\\pi]\\).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 2026032601515039889300276CEOQe6)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Point A is located at (0, 0), Point B is located at (2, 3), and Point C is located at (5, 7). Vector AB is defined from Point A to Point B, and Vector BC is defined from Point B to Point C. Parabola P has the equation y = ax^2 + bx + c. Det",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015150462760976eivnV6bj)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "p = 0.2, n = 250. Calculate the probability distribution of allergy sufferers among 250 people.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015150686515960mcN93hEU)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Determine the unattainable value of the function f(x) = 3 * sin(2x) + 1 within the interval [0, π].",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 2026032601515168485583azyHWFLp)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Calculate the sum of angles ∠ABC, ∠BCA, and ∠CAB in triangle ABC, where the angle bisector of ∠ABC intersects AC at point D, and the angle bisector theorem applies.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015151306156899xSIB06LX)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Determine the angle θ between lines L1 and L2 at their intersection point E, where Line L1 is defined by y = 2x + 3 and Line L2 by y = -x + 5.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015151541406468Su1u2wzx)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Calculate the probability that selected vertices V1, V2, ..., Vn on a circle form a convex polygon.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015151923017036ryX3520X)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Given real numbers x, y, and z such that x^2 + y^2 + z^2 = 1 and x + y + z = 0, find the maximum value of the expression 2x + 3y + 4z.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015152271858812y6OZLPTk)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Calculate the perimeter of triangle ABC with vertices A(2, 2), B(7, 2), and C(4, 8).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015152348084465bUF35cKb)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_3.jsonl",
+      "problem_preview": "Matrix A is a 2x2 matrix with entries [[2, 3], [1, 4]], and Matrix B is a 2x2 matrix with entries [[0, 1], [1, 0]]. Determine the eigenvectors of the resulting matrix after multiplying matrices A and B.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326015152413457379pVrPzAh0)\",\"type\":\"new_api_error\"}}"
+    }
+  ],
+  "started_at": 1774434038.275612,
+  "easy_max_tokens": 45000,
+  "medium_max_tokens": 75000,
+  "hard_max_tokens": 75000,
+  "easy_min_completion_tokens": 1500,
+  "medium_min_completion_tokens": 2500,
+  "hard_min_completion_tokens": 2500,
+  "retries": 1,
+  "debug_store_raw": false,
+  "debug_raw_char_cap": 4000,
+  "finished_at": 1774461112.4313447
+}

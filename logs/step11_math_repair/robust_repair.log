@@ -1,0 +1,173 @@
+{"missing_rows": 69}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "answer_verdict": "ok"}
+{"done": 1, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "answer_verdict": "ok"}
+{"done": 2, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "answer_verdict": "ok"}
+{"done": 3, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "answer_verdict": "ok"}
+{"done": 4, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "answer_verdict": "ok"}
+{"done": 5, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "answer_verdict": "ok"}
+{"done": 6, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "answer_verdict": "ok"}
+{"done": 7, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_05.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "answer_verdict": "ok"}
+{"done": 8, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "answer_verdict": "ok"}
+{"done": 9, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "answer_verdict": "ok"}
+{"done": 10, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "answer_verdict": "ok"}
+{"done": 11, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "answer_verdict": "ok"}
+{"done": 12, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "answer_verdict": "ok"}
+{"done": 13, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "answer_verdict": "ok"}
+{"done": 14, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "answer_verdict": "ok"}
+{"done": 15, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "answer_verdict": "ok"}
+{"done": 16, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "answer_verdict": "ok"}
+{"done": 17, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "verdict": "ok"}
+Traceback (most recent call last):
+  File "/home/dataset-local/usr/lh/zeg/data_synthesis/scripts/11_generate_answers.py", line 382, in _gateway_generate
+    with request.urlopen(req, timeout=timeout_sec) as resp:
+  File "/home/dataset-local/public_conda/miniconda3/envs/mathfusion/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/dataset-local/public_conda/miniconda3/envs/mathfusion/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/home/dataset-local/public_conda/miniconda3/envs/mathfusion/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/home/dataset-local/public_conda/miniconda3/envs/mathfusion/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/home/dataset-local/public_conda/miniconda3/envs/mathfusion/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/home/dataset-local/public_conda/miniconda3/envs/mathfusion/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/generate_one_step11_row.py", line 110, in <module>
+    main()
+  File "/tmp/generate_one_step11_row.py", line 91, in main
+    ans = step11._answer_problem(
+  File "/home/dataset-local/usr/lh/zeg/data_synthesis/scripts/11_generate_answers.py", line 675, in _answer_problem
+    first_resp = _single_pass(
+  File "/home/dataset-local/usr/lh/zeg/data_synthesis/scripts/11_generate_answers.py", line 647, in _single_pass
+    raise last_err
+  File "/home/dataset-local/usr/lh/zeg/data_synthesis/scripts/11_generate_answers.py", line 616, in _single_pass
+    resp = _gateway_generate(
+  File "/home/dataset-local/usr/lh/zeg/data_synthesis/scripts/11_generate_answers.py", line 386, in _gateway_generate
+    raise RuntimeError(f"gateway_http_{e.code}: {body[:500]}") from e
+RuntimeError: gateway_http_429: {"error":{"message":"当前分组上游负载已饱和，请稍后再试 (request id: 20260321180301914127146cCKqPz1y)","type":"new_api_error","param":"","code":"do_request_failed"}}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "answer_verdict": "ok"}
+{"done": 18, "total": 69, "attempt": 2, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_08.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_20.jsonl", "answer_verdict": "ok"}
+{"done": 19, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_20.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_20.jsonl", "answer_verdict": "ok"}
+{"done": 20, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_20.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_20.jsonl", "answer_verdict": "ok"}
+{"done": 21, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_20.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_20.jsonl", "answer_verdict": "ok"}
+{"done": 22, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_20.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_21.jsonl", "answer_verdict": "ok"}
+{"done": 23, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_21.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_21.jsonl", "answer_verdict": "ok"}
+{"done": 24, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_21.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_21.jsonl", "answer_verdict": "ok"}
+{"done": 25, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_21.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_21.jsonl", "answer_verdict": "ok"}
+{"done": 26, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_21.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_21.jsonl", "answer_verdict": "ok"}
+{"done": 27, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_21.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_23.jsonl", "answer_verdict": "ok"}
+{"done": 28, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_23.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_27.jsonl", "answer_verdict": "ok"}
+{"done": 29, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_27.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_34.jsonl", "answer_verdict": "ok"}
+{"done": 30, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_34.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_34.jsonl", "answer_verdict": "ok"}
+{"done": 31, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_34.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_34.jsonl", "answer_verdict": "ok"}
+{"done": 32, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_34.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_34.jsonl", "answer_verdict": "ok"}
+{"done": 33, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_34.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_35.jsonl", "answer_verdict": "ok"}
+{"done": 34, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_35.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_35.jsonl", "answer_verdict": "ok"}
+{"done": 35, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_35.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_35.jsonl", "answer_verdict": "ok"}
+{"done": 36, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_35.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "answer_verdict": "ok"}
+{"done": 37, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "answer_verdict": "ok"}
+{"done": 38, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "answer_verdict": "ok"}
+{"done": 39, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "answer_verdict": "ok"}
+{"done": 40, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "answer_verdict": "ok"}
+{"done": 41, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "answer_verdict": "ok"}
+{"done": 42, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "answer_verdict": "ok"}
+{"done": 43, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "answer_verdict": "ok"}
+{"done": 44, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "answer_verdict": "ok"}
+{"done": 45, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_36.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_38.jsonl", "answer_verdict": "ok"}
+{"done": 46, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_38.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_38.jsonl", "answer_verdict": "ok"}
+{"done": 47, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_38.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_38.jsonl", "answer_verdict": "ok"}
+{"done": 48, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_38.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "answer_verdict": "ok"}
+{"done": 49, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "answer_verdict": "ok"}
+{"done": 50, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "answer_verdict": "ok"}
+{"done": 51, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "answer_verdict": "ok"}
+{"done": 52, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "answer_verdict": "ok"}
+{"done": 53, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "answer_verdict": "ok"}
+{"done": 54, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "answer_verdict": "ok"}
+{"done": 55, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_50.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_53.jsonl", "answer_verdict": "ok"}
+{"done": 56, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_53.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_53.jsonl", "answer_verdict": "ok"}
+{"done": 57, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_53.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_53.jsonl", "answer_verdict": "ok"}
+{"done": 58, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_53.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_56.jsonl", "answer_verdict": "ok"}
+{"done": 59, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_56.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_56.jsonl", "answer_verdict": "ok"}
+{"done": 60, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_56.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_56.jsonl", "answer_verdict": "ok"}
+{"done": 61, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_56.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "answer_verdict": "ok"}
+{"done": 62, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "answer_verdict": "ok"}
+{"done": 63, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "answer_verdict": "ok"}
+{"done": 64, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "answer_verdict": "ok"}
+{"done": 65, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "answer_verdict": "ok"}
+{"done": 66, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "answer_verdict": "ok"}
+{"done": 67, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "answer_verdict": "ok"}
+{"done": 68, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_68.jsonl", "verdict": "ok"}
+{"ok": true, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_73.jsonl", "answer_verdict": "ok"}
+{"done": 69, "total": 69, "attempt": 1, "source_file": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_inputs/math_train_73.jsonl", "verdict": "ok"}
+{"missing_rows": 69, "generated_rows": 69, "failures": [], "final_dir": "/home/dataset-local/usr/lh/zeg/datasets/MATH_step11_answers", "total_rows": 7500}

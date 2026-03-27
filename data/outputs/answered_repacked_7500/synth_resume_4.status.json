@@ -1,0 +1,195 @@
+{
+  "state": "ok_with_errors",
+  "model": "",
+  "easy_model": "gemini-3-flash-preview",
+  "medium_model": "gemini-3-flash-preview",
+  "hard_model": "gemini-3-flash-preview",
+  "base_url": "http://123.129.219.111:3000/v1",
+  "input_files": [
+    "/tmp/step11_prod_splits/synth_rem_4.jsonl"
+  ],
+  "requested_rows": 1212,
+  "completed_rows": 216,
+  "failed_rows": 996,
+  "current_shard": "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_4_03.jsonl",
+  "current_shard_rows": 13,
+  "touched_shards": [
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_4_01.jsonl",
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_4_02.jsonl",
+    "/home/dataset-local/usr/lh/zeg/data_synthesis/data/outputs/answered_repacked_7500/synth_resume_4_03.jsonl"
+  ],
+  "error": "",
+  "recent_errors": [
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Determine the unattainable value for the rational function f(x) = \\frac{3x^2 + 2x + 1}{x^2 - 4} within the interval [-10, 10].",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014851784886558OxDs9wge)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Consider the trigonometric equation sin(x) + cos(y) = 1, where x is in the interval [0, π] and y is implicitly defined by the equations. Given x + y = π/2, find the minimum value of the expression 2sin(x) + 3cos(y).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014851922395063XoZWggqF)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Point A(0, 0), Point B(4, 0), and Point C(2, 3) define Triangle ABC. Vector u = (1, 2) transforms the parabola y = x^2, and Vector v = (-2, 1) transforms the ellipse (x^2/4) + (y^2/9) = 1. Compute the intersection points of the transformed ",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014851986549808aAmU8Evw)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Consider rolling two standard six-sided dice. Find the probability that the sum of the numbers on the top faces is a perfect square.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 2026032601485258806400MhpVsyqX)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Let P(x) = ax^3 + bx^2 + cx + d be a polynomial with a complex root x_0. Given that P(x) has symmetry properties such that if x_0 is a root, then its conjugate x_0* is also a root, determine the value of P(x) at the complex root x_0.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014852125235477Tqvs3iTk)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Find the minimum value of f(x, y) = x^2 + y^2 subject to the constraints g(x, y) = x + y - 1 = 0 and h(x, y) = x^2 - y = 0 within the interval [0, 2].",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014852191819490ckwk9asb)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Given an angle theta in radians such that sin(theta) + cos(theta) = 1 and 0 <= theta <= pi/2, find the minimum value of the expression sin(2*theta) + cos(2*theta).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014852264201774szg8IsQs)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Determine the number of distinct bracelet arrangements with 12 beads, considering both reflection and rotational symmetry, where each bead can be one of several colors: red, blue, green, yellow.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014852409867931zlV7oeoW)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "John arrives randomly between 0 and 60 minutes. The train departs after a random time between 20 and 30 minutes. What is the probability that John arrives exactly when the train departs?",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014852623566692qFgRQSjS)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Determine the number of integers with a digit sum of 15 and no repeated digits.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014852709778357WMWqJSI4)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Find the set of all x within the interval [0, 4\\pi] for which the expression f(x) + g(x) is undefined, given f(x) = \\frac{\\sin(x)}{x - 2} and g(x) = \\tan(x) - 3.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014852779445250HbIbnaLZ)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Lines L1: y = 2x + 3, L2: y = -x + 5, and L3: y = x - 1 intersect to form a polygon. Calculate the area of the polygon.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014852843905817Ys01omFu)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "s_i are salaries of 59 employees. Determine the range of salaries.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014852909824318VoZsw7i0)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Given two equations ax^3 + bx^2 + cx + d = 0 and cx^3 + dx^2 + ax + b = 0, find all possible values of k such that both equations have a common root.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 202603260148529785387615fegU519)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Consider the polynomial equation \\( z^3 + 2z^2 + 3z + 4 = 0 \\), where \\( z \\) represents a complex number. Determine the set of all complex numbers that satisfy the given polynomial equation.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014853613815575pZpLHKm)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "In triangle \\( ABC \\) with side lengths \\( AB = 5 \\), \\( BC = 7 \\), and \\( CA = 8 \\), find the maximum length of segment \\( DE \\) that is parallel to side \\( BC \\) and lies within triangle \\( ABC \\).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014853133211809fMClBPdf)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Solve the system of equations |x - 3| = |y - 9| and |x - 9| = 2|y - 3| for real numbers x and y. Calculate the sum of x_i + y_i for all solutions (x_i, y_i).",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014853255213976cM91Qxeq)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Determine the number of intersection points between the line L: y = 2x + 3 and the ellipse E: x^2/4 + y^2/9 = 1.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014853468044415Von6CVk5)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "Compute the value of sin 0° using the unit circle, where the unit circle is defined with center at the origin and radius 1.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 202603260148536168213091AtO389N)\",\"type\":\"new_api_error\"}}"
+    },
+    {
+      "source_file": "/tmp/step11_prod_splits/synth_rem_4.jsonl",
+      "problem_preview": "The salary distribution across positions is altered, affecting the median calculation. Determine the median salary after a change in salary distribution.",
+      "model": "gemini-3-flash-preview",
+      "max_tokens": 75000,
+      "min_completion_tokens": 2500,
+      "error": "gateway_http_401: {\"error\":{\"message\":\"[sk-3NW***nYE] 该令牌额度已用尽 !token.UnlimitedQuota \\u0026\\u0026 token.RemainQuota = -2366495 (request id: 20260326014853747306823v9NfgcHQ)\",\"type\":\"new_api_error\"}}"
+    }
+  ],
+  "started_at": 1774434038.2702975,
+  "easy_max_tokens": 45000,
+  "medium_max_tokens": 75000,
+  "hard_max_tokens": 75000,
+  "easy_min_completion_tokens": 1500,
+  "medium_min_completion_tokens": 2500,
+  "hard_min_completion_tokens": 2500,
+  "retries": 1,
+  "debug_store_raw": false,
+  "debug_raw_char_cap": 4000,
+  "finished_at": 1774460933.7808454
+}

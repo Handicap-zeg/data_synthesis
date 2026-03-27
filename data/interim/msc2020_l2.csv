@@ -1,0 +1,535 @@
+code,l1,desc
+00Axx,00,General and miscellaneous specific topics
+00Bxx,00,Conference proceedings and collections of articles
+01Axx,01,History of mathematics and mathematicians
+03Axx,03,Philosophical aspects of logic and foundations
+03Bxx,03,General logic
+03Cxx,03,Model theory
+03Dxx,03,Computability and recursion theory
+03Exx,03,Set theory
+03Fxx,03,Proof theory and constructive mathematics
+03Gxx,03,Algebraic logic
+03Hxx,03,Nonstandard models [See also 03C62]
+05Axx,05,"Enumerative combinatorics {For enumeration in graph theory, see 05C30}"
+05Bxx,05,"Designs and configurations {For applications of design theory, see 94C30}"
+05Cxx,05,"Graph theory {For computer science, see 68R10}"
+05Dxx,05,Extremal combinatorics
+05Exx,05,Algebraic combinatorics
+06Axx,06,Ordered sets
+06Bxx,06,Lattices [See also 03G10]
+06Cxx,06,"Modular lattices, complemented lattices"
+06Dxx,06,Distributive lattices
+06Exx,06,Boolean algebras (Boolean rings) [See also 03G05]
+06Fxx,06,Ordered structures
+08Axx,08,Algebraic structures [See also 03C05]
+08Bxx,08,Varieties [See also 03C05]
+08Cxx,08,Other classes of algebras
+11Axx,11,"Elementary number theory {For analogues in number fields, see 11R04}"
+11Bxx,11,Sequences and sets
+11Cxx,11,Polynomials and matrices
+11Dxx,11,"Diophantine equations [See also 11Gxx, 14Gxx]"
+11Exx,11,Forms and linear algebraic groups [See also 19Gxx] {For quadratic forms in
+11Fxx,11,"Discontinuous groups and automorphic forms [See also 11R39, 11S37, 14Gxx,"
+11Gxx,11,"Arithmetic algebraic geometry (Diophantine geometry) [See also 11Dxx, 14Gxx,"
+11Hxx,11,"Geometry of numbers {For applications in coding theory, see 94B75}"
+11Jxx,11,"Diophantine approximation, transcendental number theory [See also 11K60]"
+11Kxx,11,Probabilistic theory: distribution modulo 1; metric theory of algorithms
+11Lxx,11,"Exponential sums and character sums {For finite fields, see 11Txx}"
+11Mxx,11,Zeta and L-functions: analytic theory
+11Nxx,11,Multiplicative number theory
+11Pxx,11,Additive number theory; partitions
+11Rxx,11,"Algebraic number theory: global fields {For complex multiplication, see 11G15}"
+11Sxx,11,Algebraic number theory: local fields
+11Txx,11,Finite fields and commutative rings (number-theoretic aspects)
+11Uxx,11,Connections of number theory and logic
+11Yxx,11,"Computational number theory {For software etc., see 11-04} [See also 68W30]"
+11Zxx,11,Miscellaneous applications of number theory
+12Dxx,12,Real and complex fields
+12Exx,12,General field theory
+12Fxx,12,Field extensions
+12Gxx,12,Homological methods (field theory)
+12Hxx,12,Differential and difference algebra
+12Jxx,12,Topological fields
+12Kxx,12,Generalizations of fields
+12Lxx,12,Connections between field theory and logic
+13Axx,13,General commutative ring theory
+13Bxx,13,Commutative ring extensions and related topics
+13Cxx,13,Theory of modules and ideals in commutative rings
+13Dxx,13,"Homological methods in commutative ring theory {For noncommutative rings,"
+13Exx,13,"Chain conditions, finiteness conditions in commutative ring theory"
+13Fxx,13,Arithmetic rings and other special commutative rings
+13Gxx,13,Integral domains
+13Hxx,13,Local rings and semilocal rings
+13Jxx,13,"Topological rings and modules [See also 16W60, 16W80]"
+13Lxx,13,"Applications of logic to commutative algebra [See also 03Cxx, 03Hxx]"
+13Mxx,13,"Finite commutative rings {For number-theoretic aspects, see 11Txx}"
+13Nxx,13,"Differential algebra [See also 12H05, 14F10]"
+13Pxx,13,"Computational aspects and applications of commutative rings [See also 14Qxx,"
+14Axx,14,Foundations of algebraic geometry
+14Bxx,14,Local theory in algebraic geometry
+14Cxx,14,Cycles and subschemes
+14Dxx,14,"Families, fibrations in algebraic geometry"
+14Exx,14,Birational geometry
+14Fxx,14,(Co)homology theory in algebraic geometry [See also 13Dxx]
+14Gxx,14,Arithmetic problems in algebraic geometry; Diophantine geometry [See also
+14Hxx,14,Curves in algebraic geometry
+14Jxx,14,"Surfaces and higher-dimensional varieties {For analytic theory, see 32Jxx}"
+14Kxx,14,Abelian varieties and schemes
+14Lxx,14,"Algebraic groups [See also 11E57] {For Lie algebras, see 17B45; for linear algebraic groups, see 20Gxx}"
+14Mxx,14,Special varieties
+14Nxx,14,Projective and enumerative algebraic geometry [See also 51-XX]
+14Pxx,14,Real algebraic and real-analytic geometry
+14Qxx,14,"Computational aspects in algebraic geometry {For software etc., see 14-04} [See"
+14Rxx,14,Affine geometry
+14Txx,14,"Tropical geometry [See also 12K10, 14M25, 14N10, 52B20]"
+15Axx,15,Basic linear algebra
+15Bxx,15,Special matrices
+16Bxx,16,General and miscellaneous
+16Dxx,16,"Modules, bimodules and ideals in associative algebras"
+16Exx,16,"Homological methods in associative algebras {For commutative rings, see"
+16Gxx,16,Representation theory of associative rings and algebras
+16Hxx,16,"Associative algebras and orders {For arithmetic aspects, see 11R52, 11R54,"
+16Kxx,16,"Division rings and semisimple Artin rings [See also 12E15, 15A30]"
+16Lxx,16,Local rings and generalizations
+16Nxx,16,Radicals and radical properties of associative rings
+16Pxx,16,"Chain conditions, growth conditions, and other forms of finiteness for associative"
+16Rxx,16,Rings with polynomial identity
+16Sxx,16,Associative rings and algebras arising under various constructions
+16Txx,16,"Hopf algebras, quantum groups and related topics"
+16Uxx,16,Conditions on elements
+16Wxx,16,Associative rings and algebras with additional structure
+16Yxx,16,"Generalizations {For nonassociative rings, see 17-XX}"
+16Zxx,16,"Computational aspects of associative rings {For software etc., see 16-04}"
+17Axx,17,General nonassociative rings
+17Bxx,17,"Lie algebras and Lie superalgebras {For Lie groups, see 22Exx}"
+17Cxx,17,"Jordan algebras (algebras, triples and pairs)"
+17Dxx,17,Other nonassociative rings and algebras
+18Axx,18,General theory of categories and functors
+18Bxx,18,Special categories
+18Cxx,18,Categories and theories
+18Dxx,18,Categorical structures
+18Exx,18,Categorical algebra
+18Fxx,18,Categories in geometry and topology
+18Gxx,18,"Homological algebra in category theory, derived categories and functors [See"
+18Mxx,18,Monoidal categories and operads
+18Nxx,18,Higher categories and homotopical algebra
+19Axx,19,"Grothendieck groups and K0 [See also 13D15, 18F30]"
+19Bxx,19,Whitehead groups and K1
+19Cxx,19,Steinberg groups and K2
+19Dxx,19,Higher algebraic K-theory
+19Exx,19,K-theory in geometry
+19Fxx,19,"K-theory in number theory [See also 11R70, 11S70]"
+19Gxx,19,K-theory of forms [See also 11Exx]
+19Jxx,19,Obstructions from topology
+19Kxx,19,"K-theory and operator algebras [See mainly 46L80, and also 46M20]"
+19Lxx,19,"Topological K-theory [See also 55N15, 55R50, 55S25]"
+19Mxx,19,Miscellaneous applications of K-theory
+20Axx,20,Foundations
+20Bxx,20,Permutation groups
+20Cxx,20,"Representation theory of groups {For representation rings and Burnside rings,"
+20Dxx,20,Abstract finite groups
+20Exx,20,Structure and classification of infinite or finite groups
+20Fxx,20,Special aspects of infinite or finite groups
+20Gxx,20,"Linear algebraic groups and related topics {For arithmetic theory, see 11E57,"
+20Hxx,20,Other groups of matrices [See also 15A30]
+20Jxx,20,Connections of group theory with homological algebra and category theory
+20Kxx,20,Abelian groups
+20Lxx,20,Groupoids (i.e. small categories in which all morphisms are isomorphisms) {For
+20Mxx,20,Semigroups
+20Nxx,20,Other generalizations of groups
+20Pxx,20,Probabilistic methods in group theory [See also 60Bxx]
+22Axx,22,Topological and differentiable algebraic systems {For topological rings and
+22Bxx,22,Locally compact abelian groups (LCA groups)
+22Cxx,22,Compact groups
+22Dxx,22,Locally compact groups and their algebras
+22Exx,22,"Lie groups {For the topology of Lie groups and homogeneous spaces, see 57Sxx,"
+22Fxx,22,Noncompact transformation groups
+26Axx,26,Functions of one variable
+26Bxx,26,Functions of several variables
+26Cxx,26,"Polynomials, rational functions in real analysis"
+26Dxx,26,"Inequalities in real analysis {For maximal function inequalities, see 42B25; for"
+26Exx,26,Miscellaneous topics in real functions [See also 58Cxx]
+28Axx,28,Classical measure theory
+28Bxx,28,"Set functions, measures and integrals with values in abstract spaces"
+28Cxx,28,"Set functions and measures on spaces with additional structure [See also 46G12,"
+28Dxx,28,"Measure-theoretic ergodic theory [See also 11K50, 11K55, 22D40, 37Axx,"
+28Exx,28,Miscellaneous topics in measure theory
+30Axx,30,General properties of functions of one complex variable
+30Bxx,30,Series expansions of functions of one complex variable
+30Cxx,30,Geometric function theory
+30Dxx,30,"Entire and meromorphic functions of one complex variable, and related topics"
+30Exx,30,Miscellaneous topics of analysis in the complex plane
+30Fxx,30,Riemann surfaces
+30Gxx,30,Generalized function theory
+30Hxx,30,Spaces and algebras of analytic functions of one complex variable
+30Jxx,30,Function theory on the disc
+30Kxx,30,Universal holomorphic functions of one complex variable
+30Lxx,30,Analysis on metric spaces
+31Axx,31,Two-dimensional potential theory
+31Bxx,31,Higher-dimensional potential theory
+31Cxx,31,Generalizations of potential theory
+31Dxx,31,Axiomatic potential theory
+31Exx,31,Potential theory on fractals and metric spaces
+32Axx,32,Holomorphic functions of several complex variables
+32Bxx,32,"Local analytic geometry [See also 13-XX, 14-XX]"
+32Cxx,32,Analytic spaces
+32Dxx,32,Analytic continuation
+32Exx,32,Holomorphic convexity
+32Fxx,32,Geometric convexity in several complex variables
+32Gxx,32,Deformations of analytic structures
+32Hxx,32,Holomorphic mappings and correspondences
+32Jxx,32,"Compact analytic spaces {For Riemann surfaces, see 14Hxx, 30Fxx; for algebraic"
+32Kxx,32,Generalizations of analytic spaces
+32Lxx,32,Holomorphic fiber spaces [See also 55Rxx]
+32Mxx,32,Complex spaces with a group of automorphisms
+32Nxx,32,"Automorphic functions [See also 11Fxx, 20H10, 22E40, 30F35]"
+32Pxx,32,Non-Archimedean analysis [Should also be assigned at least one other classification number from Section 32 describing the type of problem]
+32Qxx,32,Complex manifolds
+32Sxx,32,Complex singularities [See also 58Kxx]
+32Txx,32,Pseudoconvex domains
+32Uxx,32,Pluripotential theory
+32Vxx,32,CR manifolds
+32Wxx,32,Differential operators in several variables
+33Bxx,33,Elementary classical functions
+33Cxx,33,Hypergeometric functions
+33Dxx,33,Basic hypergeometric functions
+33Exx,33,Other special functions
+33Fxx,33,"Computational aspects of special functions {For software etc., see 33-04}"
+34Axx,34,General theory for ordinary differential equations
+34Bxx,34,"Boundary value problems for ordinary differential equations {For ordinary differential operators, see 34Lxx}"
+34Cxx,34,Qualitative theory for ordinary differential equations [See also 37-XX]
+34Dxx,34,"Stability theory for ordinary differential equations [See also 37C75, 93Dxx]"
+34Exx,34,Asymptotic theory for ordinary differential equations
+34Fxx,34,"Ordinary differential equations and systems with randomness [See also 34K50,"
+34Gxx,34,"Differential equations in abstract spaces [See also 34K30, 47Jxx, 58D25]"
+34Hxx,34,"Control problems involving ordinary differential equations [See also 49J15,"
+34Kxx,34,"Functional-differential equations (including equations with delayed, advanced"
+34Lxx,34,Ordinary differential operators [See also 47E05]
+34Mxx,34,"Ordinary differential equations in the complex domain [See also 30Dxx, 32G34]"
+34Nxx,34,Dynamic equations on time scales or measure chains {For real analysis on time
+35Axx,35,General topics in partial differential equations
+35Bxx,35,Qualitative properties of solutions to partial differential equations
+35Cxx,35,Representations of solutions to partial differential equations
+35Dxx,35,Generalized solutions to partial differential equations
+35Exx,35,Partial differential equations and systems of partial differential equations with
+35Fxx,35,General first-order partial differential equations and systems of first-order partial differential equations
+35Gxx,35,General higher-order partial differential equations and systems of higher-order
+35Hxx,35,Close-to-elliptic equations
+35Jxx,35,"Elliptic equations and elliptic systems {For global analysis, analysis on manifolds,"
+35Kxx,35,"Parabolic equations and parabolic systems {For global analysis, analysis on"
+35Lxx,35,"Hyperbolic equations and hyperbolic systems {For global analysis, see 58J45}"
+35Mxx,35,Partial differential equations of mixed type and mixed-type systems of partial
+35Nxx,35,"Overdetermined problems for partial differential equations and systems of partial differential equations {For global analysis, see 58Hxx, 58J10, 58J15}"
+35Pxx,35,Spectral theory and eigenvalue problems for partial differential equations {For
+35Qxx,35,"Partial differential equations of mathematical physics and other areas of application [See also 35J05, 35J10, 35K05, 35L05]"
+35Rxx,35,"Miscellaneous topics in partial differential equations {For equations on manifolds, see 32Wxx, 58Jxx; for manifolds of solutions, see 58Bxx; for stochastic PDEs,"
+35Sxx,35,"Pseudodifferential operators and other generalizations of partial differential operators {For operator theory, see 47G30, 58J40}"
+37Axx,37,Ergodic theory [See also 28Dxx]
+37Bxx,37,Topological dynamics
+37Cxx,37,"Smooth dynamical systems: general theory [See also 34Cxx, 34Dxx]"
+37Dxx,37,Dynamical systems with hyperbolic behavior
+37Exx,37,Low-dimensional dynamical systems
+37Fxx,37,"Dynamical systems over complex numbers [See also 30D05, 32H50]"
+37Gxx,37,"Local and nonlocal bifurcation theory for dynamical systems [See also 34C23,"
+37Hxx,37,"Random dynamical systems [See also 15B52, 34Fxx, 47B80, 70L05, 82C05,"
+37Jxx,37,Dynamical aspects of finite-dimensional Hamiltonian and Lagrangian systems
+37Kxx,37,Dynamical system aspects of infinite-dimensional Hamiltonian and Lagrangian
+37Lxx,37,"Infinite-dimensional dissipative dynamical systems [See also 35Bxx, 35Qxx]"
+37Mxx,37,Approximation methods and numerical treatment of dynamical systems {For
+37Nxx,37,Applications of dynamical systems
+37Pxx,37,"Arithmetic and non-Archimedean dynamical systems [See also 11S82, 37A44]"
+39Axx,39,"Difference equations {For dynamic equations on time scales, see 34N05; for"
+39Bxx,39,Functional equations and inequalities [See also 30D05]
+40Axx,40,Convergence and divergence of infinite limiting processes
+40Bxx,40,Multiple sequences and series
+40Cxx,40,General summability methods
+40Dxx,40,Direct theorems on summability
+40Exx,40,Inversion theorems
+40Fxx,40,Absolute and strong summability [Should also be assigned at least one other
+40Gxx,40,Special methods of summability
+40Hxx,40,Functional analytic methods in summability
+40Jxx,40,Summability in abstract structures [Should also be assigned at least one other
+41Axx,41,Approximations and expansions {For approximation theory in the complex
+42Axx,42,Harmonic analysis in one variable
+42Bxx,42,"Harmonic analysis in several variables {For automorphic theory, see mainly"
+42Cxx,42,Nontrigonometric harmonic analysis
+43Axx,43,"Abstract harmonic analysis {For other analysis on topological and Lie groups,"
+44Axx,44,"Integral transforms, operational calculus {For fractional derivatives and integrals, see 26A33; for Fourier transforms, see 42A38, 42B10; for integral transforms in"
+45Axx,45,Linear integral equations
+45Bxx,45,Fredholm integral equations
+45Cxx,45,"Eigenvalue problems for integral equations [See also 34Lxx, 35Pxx, 45P05,"
+45Dxx,45,Volterra integral equations [See also 34A12]
+45Exx,45,"Singular integral equations [See also 30E20, 30E25, 44A15, 44A35]"
+45Fxx,45,Systems of linear integral equations
+45Gxx,45,"Nonlinear integral equations [See also 47H30, 47Jxx]"
+45Hxx,45,Integral equations with miscellaneous special kernels [See also 44A15]
+45Jxx,45,"Integro-ordinary differential equations [See also 34K05, 34K30, 47G20]"
+45Kxx,45,"Integro-partial differential equations [See also 34K30, 35R09, 35R10, 47G20]"
+45Lxx,45,Theoretical approximation of solutions to integral equations {For numerical
+45Mxx,45,Qualitative behavior of solutions to integral equations
+45Nxx,45,"Abstract integral equations, integral equations in abstract spaces"
+45Pxx,45,"Integral operators [See also 47B38, 47G10]"
+45Qxx,45,Inverse problems for integral equations
+45Rxx,45,Random integral equations [See also 60H20]
+46Axx,46,"Topological linear spaces and related structures {For function spaces, see"
+46Bxx,46,"Normed linear spaces and Banach spaces; Banach lattices {For function spaces,"
+46Cxx,46,"Inner product spaces and their generalizations, Hilbert spaces {For function"
+46Exx,46,"Linear function spaces and their duals [See also 30H05, 32A38, 46F05] {For"
+46Fxx,46,"Distributions, generalized functions, distribution spaces [See also 46T30]"
+46Gxx,46,"Measures, integration, derivative, holomorphy (all involving infinitedimensional spaces) [See also 28-XX, 46Txx]"
+46Hxx,46,"Topological algebras, normed rings and algebras, Banach algebras {For group"
+46Jxx,46,Commutative Banach algebras and commutative topological algebras [See also
+46Kxx,46,Topological (rings and) algebras with an involution [See also 16W10]
+46Lxx,46,"Selfadjoint operator algebras (C ∗ -algebras, von Neumann (W ∗ -) algebras, etc.)"
+46Mxx,46,Methods of category theory in functional analysis [See also 18-XX]
+46Nxx,46,Miscellaneous applications of functional analysis [See also 47Nxx]
+46Sxx,46,Other (nonclassical) types of functional analysis [See also 47Sxx]
+46Txx,46,"Nonlinear functional analysis [See also 47Hxx, 47Jxx, 58Cxx, 58Dxx]"
+47Axx,47,General theory of linear operators
+47Bxx,47,Special classes of linear operators
+47Cxx,47,Individual linear operators as elements of algebraic systems
+47Dxx,47,"Groups and semigroups of linear operators, their generalizations and applications"
+47Exx,47,"Ordinary differential operators [See also 34Bxx, 34Lxx]"
+47Fxx,47,"Partial differential operators [See also 35Pxx, 58Jxx]"
+47Gxx,47,"Integral, integro-differential, and pseudodifferential operators [See also 58Jxx]"
+47Hxx,47,"Nonlinear operators and their properties {For global and geometric aspects,"
+47Jxx,47,Equations and inequalities involving nonlinear operators [See also 46Txx] {For
+47Lxx,47,Linear spaces and algebras of operators [See also 46Lxx]
+47Nxx,47,Miscellaneous applications of operator theory [See also 46Nxx]
+47Sxx,47,Other (nonclassical) types of operator theory [See also 46Sxx]
+49Jxx,49,Existence theories in calculus of variations and optimal control
+49Kxx,49,Optimality conditions
+49Lxx,49,"Hamilton-Jacobi theories [See also 70H20, 35F21]"
+49Mxx,49,"Numerical methods in optimal control [See also 65Kxx, 90-08, 90Cxx]"
+49Nxx,49,Miscellaneous topics in calculus of variations and optimal control
+49Qxx,49,Manifolds and measure-geometric topics [See also 58Exx]
+49Rxx,49,Variational methods for eigenvalues of operators [Should also be assigned at
+49Sxx,49,Variational principles of physics [Should also be assigned at least one other
+51Axx,51,Linear incidence geometry
+51Bxx,51,Nonlinear incidence geometry
+51Cxx,51,"Ring geometry (Hjelmslev, Barbilian, etc.)"
+51Dxx,51,Geometric closure systems
+51Exx,51,Finite geometry and special incidence structures
+51Fxx,51,Metric geometry
+51Gxx,51,"Ordered geometries (ordered incidence structures, etc.)"
+51Hxx,51,Topological geometry
+51Jxx,51,Incidence groups
+51Kxx,51,Distance geometry
+51Lxx,51,Geometric order structures [See also 53C75]
+51Mxx,51,Real and complex geometry
+51Nxx,51,Analytic and descriptive geometry
+51Pxx,51,Classical or axiomatic geometry and physics [Should also be assigned at least
+52Axx,52,General convexity
+52Bxx,52,Polytopes and polyhedra
+52Cxx,52,Discrete geometry
+53Axx,53,Classical differential geometry
+53Bxx,53,Local differential geometry
+53Cxx,53,"Global differential geometry [See also 51H25, 58-XX] {For related bundle theory,"
+53Dxx,53,"Symplectic geometry, contact geometry [See also 37Jxx, 70Gxx, 70Hxx]"
+53Exx,53,Geometric evolution equations
+53Zxx,53,Applications of differential geometry to sciences and engineering
+54Axx,54,Generalities in topology
+54Bxx,54,Basic constructions in general topology
+54Cxx,54,Maps and general types of topological spaces defined by maps
+54Dxx,54,Fairly general properties of topological spaces
+54Exx,54,Topological spaces with richer structures
+54Fxx,54,Special properties of topological spaces
+54Gxx,54,Peculiar topological spaces
+54Hxx,54,"Connections of general topology with other structures, applications"
+54Jxx,54,Nonstandard topology [See also 03H05]
+55Mxx,55,Classical topics in algebraic topology {For the topology of Euclidean spaces
+55Nxx,55,Homology and cohomology theories in algebraic topology {For homology and
+55Pxx,55,"Homotopy theory {For simple homotopy type, see 57Q10}"
+55Qxx,55,Homotopy groups
+55Rxx,55,"Fiber spaces and bundles in algebraic topology [See also 18F15, 32Lxx, 46M20,"
+55Sxx,55,Operations and obstructions in algebraic topology
+55Txx,55,"Spectral sequences in algebraic topology [See also 18G40, 55R20]"
+55Uxx,55,Applied homological algebra and category theory in algebraic topology [See also
+57Kxx,57,Low-dimensional topology in specific dimensions
+57Mxx,57,General low-dimensional topology
+57Nxx,57,Topological manifolds
+57Pxx,57,Generalized manifolds [See also 18F15]
+57Qxx,57,PL-topology
+57Rxx,57,"Differential topology {For foundational questions of differentiable manifolds,"
+57Sxx,57,"Topological transformation groups [See also 20F34, 22-XX, 37-XX, 54H15,"
+57Txx,57,Homology and homotopy of topological groups and related structures
+57Zxx,57,Relations of manifolds and cell complexes with science and engineering
+58Axx,58,General theory of differentiable manifolds [See also 32Cxx]
+58Bxx,58,Infinite-dimensional manifolds
+58Cxx,58,"Calculus on manifolds; nonlinear operators [See also 46Txx, 47Hxx, 47Jxx]"
+58Dxx,58,Spaces and manifolds of mappings (including nonlinear versions of 46Exx) [See
+58Exx,58,Variational problems in infinite-dimensional spaces
+58Hxx,58,"Pseudogroups, differentiable groupoids and general structures on manifolds"
+58Jxx,58,Partial differential equations on manifolds; differential operators [See also
+58Kxx,58,"Theory of singularities and catastrophe theory [See also 32Sxx, 37-XX]"
+58Zxx,58,Applications of global analysis to the sciences
+60Axx,60,Foundations of probability theory
+60Bxx,60,Probability theory on algebraic and topological structures
+60Cxx,60,Combinatorial probability
+60Dxx,60,"Geometric probability and stochastic geometry [See also 52A22, 53C65]"
+60Exx,60,"Distribution theory [See also 62Exx, 62Hxx]"
+60Fxx,60,"Limit theorems in probability theory [See also 28Dxx, 60B12]"
+60Gxx,60,Stochastic processes
+60Hxx,60,Stochastic analysis [See also 58J65]
+60Jxx,60,Markov processes
+60Kxx,60,Special processes
+60Lxx,60,Rough analysis
+62Axx,62,Foundational topics in statistics
+62Bxx,62,Sufficiency and information
+62Cxx,62,"Statistical decision theory [See also 90B50, 91B06] {For game theory, see 91A35}"
+62Dxx,62,Statistical sampling theory and related topics
+62Exx,62,Statistical distribution theory [See also 60Exx]
+62Fxx,62,Parametric inference
+62Gxx,62,Nonparametric inference
+62Hxx,62,Multivariate analysis [See also 60Exx]
+62Jxx,62,"Linear inference, regression"
+62Kxx,62,Design of statistical experiments [See also 05Bxx]
+62Lxx,62,Sequential statistical methods
+62Mxx,62,Inference from stochastic processes
+62Nxx,62,Survival analysis and censored data
+62Pxx,62,"Applications of statistics [See also 90-XX, 91-XX, 92-XX]"
+62Qxx,62,Statistical tables
+62Rxx,62,Statistics on algebraic and topological structures
+65Axx,65,Tables in numerical analysis
+65Bxx,65,Acceleration of convergence in numerical analysis
+65Cxx,65,"Probabilistic methods, stochastic differential equations"
+65Dxx,65,Numerical approximation and computational geometry (primarily algorithms)
+65Exx,65,"Numerical methods in complex analysis (potential theory, etc.)"
+65Fxx,65,Numerical linear algebra
+65Gxx,65,Error analysis and interval analysis
+65Hxx,65,Nonlinear algebraic or transcendental equations
+65Jxx,65,Numerical analysis in abstract spaces
+65Kxx,65,"Numerical methods for mathematical programming, optimization and variational techniques"
+65Lxx,65,Numerical methods for ordinary differential equations
+65Mxx,65,"Numerical methods for partial differential equations, initial value and timedependent initial-boundary value problems"
+65Nxx,65,"Numerical methods for partial differential equations, boundary value problems"
+65Pxx,65,Numerical problems in dynamical systems [See also 37Mxx]
+65Qxx,65,"Numerical methods for difference and functional equations, recurrence relations"
+65Rxx,65,"Numerical methods for integral equations, integral transforms"
+65Sxx,65,Graphical methods in numerical analysis
+65Txx,65,Numerical methods in Fourier analysis
+65Yxx,65,Computer aspects of numerical algorithms
+65Zxx,65,Applications to the sciences
+68Mxx,68,Computer system organization
+68Nxx,68,Theory of software
+68Pxx,68,Theory of data
+68Qxx,68,Theory of computing
+68Rxx,68,Discrete mathematics in relation to computer science
+68Txx,68,Artificial intelligence
+68Uxx,68,Computing methodologies and applications
+68Vxx,68,Computer science support for mathematical research and practice
+68Wxx,68,"Algorithms in computer science {For numerical algorithms, see 65-XX; for"
+70Axx,70,"Axiomatics, foundations"
+70Bxx,70,Kinematics [See also 53A17]
+70Cxx,70,Statics
+70Exx,70,Dynamics of a rigid body and of multibody systems
+70Fxx,70,"Dynamics of a system of particles, including celestial mechanics"
+70Gxx,70,"General models, approaches, and methods in mechanics of particles and systems"
+70Hxx,70,Hamiltonian and Lagrangian mechanics [See also 37Jxx]
+70Jxx,70,Linear vibration theory
+70Kxx,70,"Nonlinear dynamics in mechanics [See also 34Cxx, 37-XX]"
+70Lxx,70,Random and stochastic aspects of the mechanics of particles and systems
+70Mxx,70,Orbital mechanics
+70Pxx,70,"Variable mass, rockets"
+70Qxx,70,"Control of mechanical systems [See also 60Gxx, 60Jxx]"
+70Sxx,70,"Classical field theories [See also 37Kxx, 37Lxx, 78-XX, 81Txx, 83-XX]"
+74Axx,74,"Generalities, axiomatics, foundations of continuum mechanics of solids"
+74Bxx,74,Elastic materials
+74Cxx,74,"Plastic materials, materials of stress-rate and internal-variable type"
+74Dxx,74,"Materials of strain-rate type and history type, other materials with memory"
+74Exx,74,Material properties given special treatment
+74Fxx,74,Coupling of solid mechanics with other effects
+74Gxx,74,Equilibrium (steady-state) problems in solid mechanics
+74Hxx,74,Dynamical problems in solid mechanics
+74Jxx,74,Waves in solid mechanics
+74Kxx,74,"Thin bodies, structures"
+74Lxx,74,Special subfields of solid mechanics
+74Mxx,74,Special kinds of problems in solid mechanics
+74Nxx,74,"Phase transformations in solids [See also 74A50, 80A22, 82B26, 82C26]"
+74Pxx,74,Optimization problems in solid mechanics [See also 49Qxx]
+74Qxx,74,"Homogenization, determination of effective properties in solid mechanics"
+74Rxx,74,Fracture and damage
+74Sxx,74,"Numerical and other methods in solid mechanics [See also 65-XX, 74G15, 74H15]"
+76Axx,76,"Foundations, constitutive equations, rheology, hydrodynamical models of nonfluid phenomena"
+76Bxx,76,Incompressible inviscid fluids
+76Dxx,76,Incompressible viscous fluids
+76Exx,76,Hydrodynamic stability
+76Fxx,76,"Turbulence [See also 37-XX, 60Gxx, 60Jxx]"
+76Gxx,76,General aerodynamics and subsonic flows
+76Hxx,76,Transonic flows
+76Jxx,76,Supersonic flows
+76Kxx,76,Hypersonic flows
+76Lxx,76,Shock waves and blast waves in fluid mechanics [See also 35L67]
+76Mxx,76,Basic methods in fluid mechanics [See also 65-XX]
+76Nxx,76,Compressible fluids and gas dynamics
+76Pxx,76,"Rarefied gas flows, Boltzmann equation in fluid mechanics [See also 82B40,"
+76Qxx,76,Hydro- and aero-acoustics
+76Rxx,76,Diffusion and convection
+76Sxx,76,Flows in porous media; filtration; seepage
+76Txx,76,Multiphase and multicomponent flows
+76Uxx,76,Rotating fluids
+76Vxx,76,Reaction effects in flows [See also 80A32]
+76Wxx,76,Magnetohydrodynamics and electrohydrodynamics
+76Xxx,76,Ionized gas flow in electromagnetic fields; plasmic flow [See also 82D10]
+76Yxx,76,"Quantum hydrodynamics and relativistic hydrodynamics [See also 82D50,"
+76Zxx,76,"Biological fluid mechanics [See also 74F10, 74L15, 92Cxx]"
+78Axx,78,General topics in optics and electromagnetic theory
+78Mxx,78,Basic methods for problems in optics and electromagnetic theory [See also
+80Axx,80,Thermodynamics and heat transfer
+80Mxx,80,Basic methods in thermodynamics and heat transfer [See also 65-XX]
+81Pxx,81,"Foundations, quantum information and its processing, quantum axioms, and"
+81Qxx,81,General mathematical topics and methods in quantum theory
+81Rxx,81,Groups and algebras in quantum theory
+81Sxx,81,General quantum mechanics and problems of quantization
+81Txx,81,Quantum field theory; related classical field theories [See also 70Sxx]
+81Uxx,81,"Quantum scattering theory [See also 34A55, 34L25, 34L40, 35P25, 47A40]"
+81Vxx,81,Applications of quantum theory to specific physical systems
+82Bxx,82,Equilibrium statistical mechanics
+82Cxx,82,Time-dependent statistical mechanics (dynamic and nonequilibrium)
+82Dxx,82,Applications of statistical mechanics to specific types of physical systems
+82Mxx,82,Basic methods in statistical mechanics [See also 65-XX]
+83Axx,83,Special relativity
+83Bxx,83,Observational and experimental questions in relativity and gravitational theory
+83Cxx,83,General relativity
+83Dxx,83,"Relativistic gravitational theories other than Einstein’s, including asymmetric"
+83Exx,83,"Unified, higher-dimensional and super field theories"
+83Fxx,83,"Relativistic cosmology {For astrophysical cosmology, see 85A40}"
+85Axx,85,"Astronomy and astrophysics {For celestial mechanics, see 70F15}"
+86Axx,86,"Geophysics [See also 76U05, 76V05]"
+90Bxx,90,Operations research and management science
+90Cxx,90,"Mathematical programming {For numerical methods, see also 49Mxx, 65Kxx}"
+91Axx,91,Game theory
+91Bxx,91,"Mathematical economics {For econometrics, see 62P20}"
+91Cxx,91,"Social and behavioral sciences: general topics {For statistics, see 62P25}"
+91Dxx,91,Mathematical sociology (including anthropology)
+91Exx,91,"Mathematical psychology {For psychometrics, see 62P15}"
+91Fxx,91,Other social and behavioral sciences (mathematical treatment)
+91Gxx,91,"Actuarial science and mathematical finance {For statistics, see 62P05}"
+92Bxx,92,Mathematical biology in general
+92Cxx,92,"Physiological, cellular and medical topics"
+92Dxx,92,Genetics and population dynamics
+92Exx,92,"Chemistry {For biochemistry, see 92C40}"
+92Fxx,92,Other natural sciences (mathematical treatment)
+93Axx,93,General systems theory
+93Bxx,93,"Controllability, observability, and system structure"
+93Cxx,93,Model systems in control theory
+93Dxx,93,Stability of control systems
+93Exx,93,Stochastic systems and control
+94Axx,94,"Communication, information"
+94Bxx,94,Theory of error-correcting codes and error-detecting codes
+94Cxx,94,"Circuits, networks [See also 68Q06]"
+94Dxx,94,Miscellaneous topics in information and communication theory
+97Axx,97,History and society (aspects of mathematics education)
+97Bxx,97,Educational policy and systems
+97Cxx,97,"Psychology of mathematics education, research in mathematics education"
+97Dxx,97,Education and instruction in mathematics
+97Exx,97,Education of foundations of mathematics
+97Fxx,97,Education of arithmetic and number theory
+97Gxx,97,Geometry education
+97Hxx,97,Algebra education
+97Ixx,97,Analysis education
+97Kxx,97,"Education of combinatorics, graph theory, probability theory, and statistics"
+97Mxx,97,Education of mathematical modeling and applications of mathematics
+97Nxx,97,Education of numerical mathematics
+97Pxx,97,Computer science (educational aspects)
+97Uxx,97,Educational material and media and educational technology in mathematics
