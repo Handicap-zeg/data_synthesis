@@ -9,6 +9,9 @@ from pathlib import Path
 from typing import Any
 
 
+DEFAULT_LOCAL_MODEL_PATH = "/jizhicfs/zeg/models/QwQ-32B"
+
+
 def _sort_key(path: Path) -> tuple[str, int, str]:
     m = re.search(r"(\d+)", path.stem)
     idx = int(m.group(1)) if m else 10**9
@@ -89,11 +92,17 @@ def run_step11(
     out_prefix: Path,
     start_shard: int,
     end_shard: int,
-    api_key: str,
     python_bin: str,
+    backend: str,
+    model_path: str,
+    api_key: str,
     easy_model: str,
     medium_model: str,
     hard_model: str,
+    torch_dtype: str,
+    device_map: str,
+    attn_implementation: str,
+    trust_remote_code: bool,
     extra_args: list[str],
 ) -> None:
     input_paths = [input_dir / f"math_train_{i:02d}.jsonl" for i in range(start_shard, end_shard + 1)]
@@ -110,8 +119,16 @@ def run_step11(
         str(out_prefix),
         "--start-index",
         str(start_shard),
-        "--api-key",
-        api_key,
+        "--backend",
+        backend,
+        "--model-path",
+        model_path,
+        "--torch-dtype",
+        torch_dtype,
+        "--device-map",
+        device_map,
+        "--attn-implementation",
+        attn_implementation,
         "--easy-model",
         easy_model,
         "--medium-model",
@@ -120,6 +137,10 @@ def run_step11(
         hard_model,
         "--inputs",
     ]
+    if backend == "gateway":
+        cmd.extend(["--api-key", api_key])
+    if trust_remote_code:
+        cmd.append("--trust-remote-code")
     cmd.extend(str(p) for p in input_paths)
     cmd.extend(extra_args)
     subprocess.run(cmd, check=True, cwd=str(project_root))
@@ -142,10 +163,16 @@ def main() -> None:
     ap.add_argument("--start-shard", type=int, default=1)
     ap.add_argument("--end-shard", type=int, default=75)
     ap.add_argument("--python-bin", default=sys.executable)
+    ap.add_argument("--backend", choices=["local_hf", "gateway"], default="local_hf")
+    ap.add_argument("--model-path", default=DEFAULT_LOCAL_MODEL_PATH)
     ap.add_argument("--api-key", default="")
     ap.add_argument("--easy-model", default="gemini-3-flash-preview-nothinking")
     ap.add_argument("--medium-model", default="gemini-3-flash-preview-nothinking")
     ap.add_argument("--hard-model", default="gemini-3-flash-preview-nothinking")
+    ap.add_argument("--torch-dtype", default="bfloat16")
+    ap.add_argument("--device-map", default="auto")
+    ap.add_argument("--attn-implementation", default="flash_attention_2")
+    ap.add_argument("--trust-remote-code", action="store_true")
     ap.add_argument("--extra-step11-arg", action="append", default=[])
     args = ap.parse_args()
 
@@ -173,8 +200,8 @@ def main() -> None:
         )
 
     if not args.prepare_only:
-        if not str(args.api_key).strip():
-            raise RuntimeError("missing --api-key for step11 run")
+        if args.backend == "gateway" and not str(args.api_key).strip():
+            raise RuntimeError("missing --api-key for gateway step11 run")
         run_step11(
             project_root=project_root,
             config_path=config_path,
@@ -182,11 +209,17 @@ def main() -> None:
             out_prefix=out_prefix,
             start_shard=int(args.start_shard),
             end_shard=int(args.end_shard),
+            backend=str(args.backend),
+            model_path=str(args.model_path),
             api_key=str(args.api_key).strip(),
             python_bin=str(args.python_bin),
             easy_model=str(args.easy_model),
             medium_model=str(args.medium_model),
             hard_model=str(args.hard_model),
+            torch_dtype=str(args.torch_dtype),
+            device_map=str(args.device_map),
+            attn_implementation=str(args.attn_implementation),
+            trust_remote_code=bool(args.trust_remote_code),
             extra_args=list(args.extra_step11_arg),
         )
 

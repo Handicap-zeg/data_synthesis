@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import ast
 import json
 import os
 import re
@@ -22,6 +23,10 @@ ANSWER_SCHEMA = {
     "check": "...",
     "final_answer": "...",
 }
+
+
+DEFAULT_LOCAL_MODEL_PATH = "/jizhicfs/zeg/models/QwQ-32B"
+_LOCAL_HF_RUNTIME_CACHE: dict[tuple[str, str, str, str, bool], dict[str, Any]] = {}
 
 
 class AnswerGenerationError(RuntimeError):
@@ -276,6 +281,12 @@ def _extract_json_object(text: str) -> tuple[dict[str, Any], str]:
                 return obj, "fenced_json"
         except Exception:
             pass
+        try:
+            obj = ast.literal_eval(blob)
+            if isinstance(obj, dict):
+                return obj, "fenced_literal_eval"
+        except Exception:
+            pass
 
     depth = 0
     start = -1
@@ -309,6 +320,12 @@ def _extract_json_object(text: str) -> tuple[dict[str, Any], str]:
             obj = json.loads(blob)
             if isinstance(obj, dict):
                 return obj, "balanced_json"
+        except Exception:
+            pass
+        try:
+            obj = ast.literal_eval(blob)
+            if isinstance(obj, dict):
+                return obj, "balanced_literal_eval"
         except Exception:
             pass
 
@@ -346,6 +363,237 @@ def _message_text(content: Any) -> str:
                 parts.append(str(item))
         return "\n".join(x.strip() for x in parts if str(x).strip()).strip()
     return str(content or "").strip()
+
+
+def _resolve_torch_dtype(name: str) -> Any:
+    import torch
+
+    key = str(name or "bfloat16").strip().lower()
+    if key in {"bf16", "bfloat16"}:
+        return torch.bfloat16
+    if key in {"fp16", "float16", "half"}:
+        return torch.float16
+    if key in {"fp32", "float32"}:
+        return torch.float32
+    if key == "auto":
+        return "auto"
+    raise RuntimeError(f"unsupported torch dtype: {name}")
+
+
+def _safe_context_window(model: Any, tokenizer: Any) -> int:
+    candidates: list[int] = []
+    config = getattr(model, "config", None)
+    generation_config = getattr(model, "generation_config", None)
+    tokenizer_limit = getattr(tokenizer, "model_max_length", None)
+    for value in (
+        getattr(config, "max_position_embeddings", None),
+        getattr(config, "sliding_window", None),
+        getattr(generation_config, "max_length", None),
+        tokenizer_limit,
+    ):
+        try:
+            iv = int(value)
+        except Exception:
+            continue
+        if 1024 <= iv <= 10_000_000:
+            candidates.append(iv)
+    return min(candidates) if candidates else 0
+
+
+def _local_hf_runtime(
+    *,
+    model_path: str,
+    torch_dtype: str,
+    device_map: str,
+    attn_implementation: str,
+    trust_remote_code: bool,
+) -> dict[str, Any]:
+    key = (
+        str(model_path),
+        str(torch_dtype),
+        str(device_map),
+        str(attn_implementation),
+        bool(trust_remote_code),
+    )
+    cached = _LOCAL_HF_RUNTIME_CACHE.get(key)
+    if cached is not None:
+        return cached
+
+    import torch
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+
+    model_path_str = str(model_path).strip()
+    if not model_path_str:
+        raise RuntimeError("missing local model path")
+    if not Path(model_path_str).exists():
+        raise FileNotFoundError(f"local model path does not exist: {model_path_str}")
+
+    dtype = _resolve_torch_dtype(torch_dtype)
+    tokenizer = AutoTokenizer.from_pretrained(
+        model_path_str,
+        trust_remote_code=bool(trust_remote_code),
+        use_fast=True,
+    )
+    model_kwargs: dict[str, Any] = {
+        "trust_remote_code": bool(trust_remote_code),
+        "device_map": str(device_map).strip() or "auto",
+    }
+    if dtype != "auto":
+        model_kwargs["torch_dtype"] = dtype
+    attn_impl = str(attn_implementation or "").strip()
+    if attn_impl and attn_impl.lower() != "none":
+        model_kwargs["attn_implementation"] = attn_impl
+    model = AutoModelForCausalLM.from_pretrained(model_path_str, **model_kwargs)
+    model.eval()
+
+    if tokenizer.pad_token_id is None and tokenizer.eos_token_id is not None:
+        tokenizer.pad_token = tokenizer.eos_token
+
+    runtime = {
+        "tokenizer": tokenizer,
+        "model": model,
+        "device": next(model.parameters()).device,
+        "context_window": _safe_context_window(model, tokenizer),
+    }
+    _LOCAL_HF_RUNTIME_CACHE[key] = runtime
+    return runtime
+
+
+def _local_generate(
+    *,
+    model_path: str,
+    model_alias: str,
+    prompt: str,
+    timeout_sec: float,
+    max_tokens: int,
+    torch_dtype: str,
+    device_map: str,
+    attn_implementation: str,
+    trust_remote_code: bool,
+) -> dict[str, Any]:
+    _ = timeout_sec
+    runtime = _local_hf_runtime(
+        model_path=model_path,
+        torch_dtype=torch_dtype,
+        device_map=device_map,
+        attn_implementation=attn_implementation,
+        trust_remote_code=trust_remote_code,
+    )
+
+    import torch
+
+    tokenizer = runtime["tokenizer"]
+    model = runtime["model"]
+    device = runtime["device"]
+    context_window = int(runtime.get("context_window", 0) or 0)
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You are a rigorous math solution writer for SFT data. "
+                "Solve carefully, then output a cleaned but sufficiently detailed reasoning record in strict JSON. "
+                "The answer should teach the method, explain key transitions, and remain mathematically precise. "
+                "Do not ramble, do not output markdown, and never output partial JSON."
+            ),
+        },
+        {"role": "user", "content": prompt},
+    ]
+
+    if hasattr(tokenizer, "apply_chat_template"):
+        input_ids = tokenizer.apply_chat_template(
+            messages,
+            tokenize=True,
+            add_generation_prompt=True,
+            return_tensors="pt",
+        )
+    else:
+        text = (
+            "System:\n"
+            + str(messages[0]["content"])
+            + "\n\nUser:\n"
+            + str(messages[1]["content"])
+            + "\n\nAssistant:\n"
+        )
+        input_ids = tokenizer(text, return_tensors="pt").input_ids
+
+    input_ids = input_ids.to(device)
+    attention_mask = torch.ones_like(input_ids, device=device)
+    prompt_tokens = int(input_ids.shape[-1])
+    effective_max_tokens = max(1, int(max_tokens))
+    if context_window > 0:
+        effective_max_tokens = min(effective_max_tokens, max(1, context_window - prompt_tokens - 8))
+
+    eos_token_id = tokenizer.eos_token_id
+    gen_kwargs: dict[str, Any] = {
+        "input_ids": input_ids,
+        "attention_mask": attention_mask,
+        "max_new_tokens": int(effective_max_tokens),
+        "do_sample": False,
+        "use_cache": True,
+        "pad_token_id": tokenizer.pad_token_id if tokenizer.pad_token_id is not None else eos_token_id,
+    }
+    if eos_token_id is not None:
+        gen_kwargs["eos_token_id"] = eos_token_id
+
+    with torch.inference_mode():
+        output_ids = model.generate(**gen_kwargs)
+
+    generated_ids = output_ids[0, input_ids.shape[-1] :]
+    raw_text = tokenizer.decode(generated_ids, skip_special_tokens=True).strip()
+    completion_tokens = int(generated_ids.shape[-1])
+    finish_reason = "stop"
+    eos_ids: set[int] = set()
+    if isinstance(eos_token_id, int):
+        eos_ids.add(eos_token_id)
+    elif isinstance(eos_token_id, (list, tuple, set)):
+        eos_ids.update(int(x) for x in eos_token_id if isinstance(x, int))
+    last_token = int(generated_ids[-1].item()) if completion_tokens > 0 else None
+    if completion_tokens >= int(effective_max_tokens) and (last_token is None or last_token not in eos_ids):
+        finish_reason = "length"
+
+    if not raw_text:
+        raise RuntimeError(f"local_model_empty_text: {model_alias}")
+    try:
+        parsed, parse_mode = _extract_json_object(raw_text)
+    except Exception as e:
+        raise AnswerGenerationError(
+            str(e),
+            debug={
+                "finish_reason": finish_reason,
+                "raw_text": raw_text,
+                "raw_text_len": len(raw_text),
+                "usage": {
+                    "prompt_tokens": prompt_tokens,
+                    "completion_tokens": completion_tokens,
+                    "total_tokens": prompt_tokens + completion_tokens,
+                },
+            },
+        ) from e
+
+    usage = {
+        "prompt_tokens": prompt_tokens,
+        "completion_tokens": completion_tokens,
+        "total_tokens": prompt_tokens + completion_tokens,
+        "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": prompt_tokens,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+        },
+        "completion_tokens_details": {
+            "text_tokens": completion_tokens,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+        },
+    }
+    return {
+        "parsed": parsed,
+        "raw_text": raw_text,
+        "raw_text_len": len(raw_text),
+        "finish_reason": finish_reason,
+        "usage": usage,
+        "parse_mode": parse_mode,
+    }
 
 
 def _gateway_generate(
@@ -655,9 +903,11 @@ def _render_solution_text(ans: dict[str, Any]) -> str:
 
 def _answer_problem(
     *,
+    backend: str,
     base_url: str,
     api_key: str,
     model: str,
+    model_path: str,
     problem: str,
     timeout_sec: float,
     max_tokens: int,
@@ -666,19 +916,36 @@ def _answer_problem(
     debug_raw_char_cap: int,
     min_completion_tokens: int,
     row: dict[str, Any],
+    torch_dtype: str,
+    device_map: str,
+    attn_implementation: str,
+    trust_remote_code: bool,
 ) -> dict[str, Any]:
     def _single_pass(*, prompt_mode: str, prompt: str, call_max_tokens: int, call_model: str) -> dict[str, Any]:
         last_err: Exception | None = None
         for attempt in range(max(1, int(retries))):
             try:
-                resp = _gateway_generate(
-                    base_url=base_url,
-                    api_key=api_key,
-                    model=call_model,
-                    prompt=prompt,
-                    timeout_sec=timeout_sec,
-                    max_tokens=call_max_tokens,
-                )
+                if backend == "local_hf":
+                    resp = _local_generate(
+                        model_path=model_path,
+                        model_alias=call_model,
+                        prompt=prompt,
+                        timeout_sec=timeout_sec,
+                        max_tokens=call_max_tokens,
+                        torch_dtype=torch_dtype,
+                        device_map=device_map,
+                        attn_implementation=attn_implementation,
+                        trust_remote_code=trust_remote_code,
+                    )
+                else:
+                    resp = _gateway_generate(
+                        base_url=base_url,
+                        api_key=api_key,
+                        model=call_model,
+                        prompt=prompt,
+                        timeout_sec=timeout_sec,
+                        max_tokens=call_max_tokens,
+                    )
                 obj = resp.get("parsed", {})
                 if not isinstance(obj, dict):
                     raise RuntimeError("answer_response_not_dict")
@@ -811,13 +1078,19 @@ def main() -> None:
     ap.add_argument("--config", required=True)
     ap.add_argument("--inputs", nargs="+", required=True)
     ap.add_argument("--out-prefix", default="data/outputs/answers/synth_answered")
+    ap.add_argument("--backend", choices=["local_hf", "gateway"], default="local_hf")
     ap.add_argument("--base-url", default="")
     ap.add_argument("--model", default="")
+    ap.add_argument("--model-path", default=DEFAULT_LOCAL_MODEL_PATH)
     ap.add_argument("--easy-model", default="gemini-3-flash-preview")
     ap.add_argument("--medium-model", default="gemini-3-flash-preview")
     ap.add_argument("--hard-model", default="gemini-3-flash-preview")
     ap.add_argument("--api-key-env", default="GEMINI_API_KEY")
     ap.add_argument("--api-key", default="")
+    ap.add_argument("--torch-dtype", default="bfloat16")
+    ap.add_argument("--device-map", default="auto")
+    ap.add_argument("--attn-implementation", default="flash_attention_2")
+    ap.add_argument("--trust-remote-code", action="store_true")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--resume", action="store_true")
     ap.add_argument("--timeout-sec", type=float, default=120.0)
@@ -855,18 +1128,37 @@ def main() -> None:
     status_path = out_prefix.parent / f"{out_prefix.stem}.status.json"
 
     synth_cfg = cfg.get("synthesis", {})
-    base_url = str(args.base_url or synth_cfg.get("base_url", "")).strip()
-    if not base_url:
-        raise RuntimeError("missing base_url: provide --base-url or synthesis.base_url in config")
-
-    api_key = str(args.api_key or os.getenv(args.api_key_env, "")).strip()
-    if not api_key:
-        raise RuntimeError(f"missing Gemini API key: provide --api-key or env {args.api_key_env}")
+    backend = str(args.backend).strip().lower()
+    base_url = ""
+    api_key = ""
+    model_path = str(args.model_path or DEFAULT_LOCAL_MODEL_PATH).strip()
+    if backend == "gateway":
+        base_url = str(args.base_url or synth_cfg.get("base_url", "")).strip()
+        if not base_url:
+            raise RuntimeError("missing base_url: provide --base-url or synthesis.base_url in config")
+        api_key = str(args.api_key or os.getenv(args.api_key_env, "")).strip()
+        if not api_key:
+            raise RuntimeError(f"missing API key: provide --api-key or env {args.api_key_env}")
+    else:
+        if not model_path:
+            raise RuntimeError("missing local model path")
+        model_path_resolved = Path(model_path)
+        if not model_path_resolved.is_absolute():
+            model_path_resolved = (root / model_path_resolved).resolve()
+        model_path = str(model_path_resolved)
+        if not Path(model_path).exists():
+            raise FileNotFoundError(f"local model path does not exist: {model_path}")
 
     override_model = str(args.model or "").strip()
-    easy_model = override_model or str(args.easy_model).strip()
-    medium_model = override_model or str(args.medium_model).strip()
-    hard_model = override_model or str(args.hard_model).strip()
+    if backend == "local_hf":
+        local_alias = override_model or Path(model_path).name
+        easy_model = local_alias
+        medium_model = local_alias
+        hard_model = local_alias
+    else:
+        easy_model = override_model or str(args.easy_model).strip()
+        medium_model = override_model or str(args.medium_model).strip()
+        hard_model = override_model or str(args.hard_model).strip()
 
     rows = _iter_input_rows(input_paths)
     if int(args.limit) > 0:
@@ -886,11 +1178,13 @@ def main() -> None:
 
     status: dict[str, Any] = {
         "state": "running",
+        "backend": backend,
         "model": override_model,
         "easy_model": easy_model,
         "medium_model": medium_model,
         "hard_model": hard_model,
         "base_url": base_url,
+        "model_path": model_path if backend == "local_hf" else "",
         "input_files": [str(p) for p in input_paths],
         "requested_rows": len(rows),
         "completed_rows": 0,
@@ -907,6 +1201,10 @@ def main() -> None:
         "easy_min_completion_tokens": int(args.easy_min_completion_tokens),
         "medium_min_completion_tokens": int(args.medium_min_completion_tokens),
         "hard_min_completion_tokens": int(args.hard_min_completion_tokens),
+        "torch_dtype": str(args.torch_dtype),
+        "device_map": str(args.device_map),
+        "attn_implementation": str(args.attn_implementation),
+        "trust_remote_code": bool(args.trust_remote_code),
         "retries": int(args.retries),
         "debug_store_raw": bool(args.debug_store_raw),
         "debug_raw_char_cap": int(args.debug_raw_char_cap),
@@ -945,9 +1243,11 @@ def main() -> None:
         )
         try:
             ans = _answer_problem(
+                backend=backend,
                 base_url=base_url,
                 api_key=api_key,
                 model=row_model,
+                model_path=model_path,
                 problem=problem,
                 timeout_sec=float(args.timeout_sec),
                 max_tokens=row_max_tokens,
@@ -956,6 +1256,10 @@ def main() -> None:
                 debug_raw_char_cap=int(args.debug_raw_char_cap),
                 min_completion_tokens=row_min_completion_tokens,
                 row=row,
+                torch_dtype=str(args.torch_dtype),
+                device_map=str(args.device_map),
+                attn_implementation=str(args.attn_implementation),
+                trust_remote_code=bool(args.trust_remote_code),
             )
             out_row = dict(row)
             out_row["answer_model"] = row_model
