@@ -715,12 +715,8 @@ def _fallback_nothinking_model(model: str) -> str:
 
 
 def _difficulty_answer_style(row: dict[str, Any]) -> tuple[str, int, int]:
-    difficulty = _row_difficulty(row)
-    if difficulty == "easy":
-        return ("easy", 6, 6)
-    if difficulty == "hard":
-        return ("hard", 10, 10)
-    return ("medium", 8, 8)
+    _ = row
+    return ("standard", 5, 8)
 
 
 def _build_answer_prompt(
@@ -733,17 +729,14 @@ def _build_answer_prompt(
 ) -> str:
     difficulty, min_steps, max_steps = _difficulty_answer_style(row)
     if compact:
-        if difficulty == "easy":
-            min_steps, max_steps = 5, 5
-        elif difficulty == "hard":
-            min_steps, max_steps = 8, 8
-        else:
-            min_steps, max_steps = 6, 6
+        min_steps = 4
+        max_steps = 6
     schema = json.dumps(ANSWER_SCHEMA, ensure_ascii=False)
     style_line = (
-        "Use one coherent teaching-oriented solution with short decisive steps, explicit key bridges, "
-        "and enough detail that a learner could reproduce the argument."
+        "Use one coherent teaching-oriented solution: make the plan explicit, justify the main transformation, "
+        "and keep enough intermediate detail that a learner could reproduce the argument."
     )
+    min_visible_chars = max(1200, int(target_min_tokens) * 4)
     base_rules = f"""
 - Return a cleaned final reasoning record, not raw scratch work.
 - Solve internally first, then write a teachable derivation that makes the key bridges explicit.
@@ -751,15 +744,13 @@ def _build_answer_prompt(
 - verdict must be "ok" or "wrong_problem".
 - When verdict="ok", key_idea must be present and should be 1 to 3 concise sentences naming the core method and why it works here.
 - solution_steps must contain between {min_steps} and {max_steps} steps when verdict="ok".
-- Use short, decisive steps. Each solution step must contain at most 2 sentences.
+- Each solution step should usually contain 2 to 5 full sentences, and most steps should be multi-sentence unless the math is genuinely trivial.
 - Each solution step must contain a concrete mathematical claim, equation, simplification, counting argument, or deduction that directly advances the solution.
-- Prefer equations and deductions over exposition. If a bridge is non-obvious, explain only the missing bridge.
 - It is good to briefly explain why a chosen equation, substitution, factorization, invariant, or case split is the right move.
+- It is allowed to include brief reflective guidance such as what to compute next, what constraint matters, or why an apparent ambiguity is resolved.
 - Do not include full alternate solutions, fake uncertainty, long digressions, or repetitive paraphrase.
 - Do not restate the entire problem, do not explain elementary definitions, and do not add unrelated background.
 - Use one main method and include the key learning transitions: setup, reduction, decisive computation, and conclusion.
-- If multiple candidate values, roots, branches, or cases appear, explicitly resolve every one of them before final_answer.
-- For sum/product/all-solutions/count questions, include one step that lists the complete valid solution set before the final computation.
 - check should usually be present and should be 1 to 2 short sentences verifying the final answer against the main condition.
 - final_answer must contain only the final answer, with no explanation.
 - {style_line}
@@ -769,8 +760,10 @@ def _build_answer_prompt(
 - If the statement appears solvable at first but careful math shows that the answer is not unique, some required condition is missing, or no exact target value can be determined from the given information, output "wrong_problem".
 - If you can only guess by numerical trial, obtain only an approximation when the question asks for an exact answer, or find that the claimed integer/rational/exact value does not actually exist from the given statement, output "wrong_problem".
 - When verdict="wrong_problem", key_idea must be "", check must be "", and solution_steps must contain exactly one short reason.
+- When verdict="ok", prefer enough visible detail that the written JSON answer is at least roughly {target_min_tokens} tokens of actual solution text if the math supports it.
+- As a practical target, the visible written output should usually be at least about {min_visible_chars} characters, not counting hidden internal reasoning.
 - If an algebraic or counting step has a non-obvious bridge, write that bridge explicitly instead of compressing it into a single clause.
-- Do not pad for length or repeat the same point in different words.
+- Do not satisfy the length target by repeating the same statement in different words.
 - Never output partial JSON.
 - Do not include markdown fences or extra prose.
 - If there are multiple valid values, use compact standard mathematical notation in final_answer.
@@ -780,7 +773,7 @@ def _build_answer_prompt(
     if compact:
         base_rules += "\n- Compact retry mode: reduce wording, but keep the key teaching transitions and all essential derivation steps."
     if expansion_retry:
-        base_rules += "\n- Expansion retry mode: keep the same short-step structure, but add any missing intermediate derivations, missing branch resolution, or missing solution-set closure."
+        base_rules += "\n- Expansion retry mode: the previous attempt was too terse. Keep the same structure but add the missing intermediate derivations and short teaching explanations."
     return f"""
 Solve the following math problem.
 Return strict JSON only.
@@ -832,10 +825,12 @@ def _answer_too_short(
         return False
     completion_tokens = _extract_completion_tokens(resp_out.get("usage", {}))
     raw_len = int(resp_out.get("raw_text_len", 0) or 0)
+    min_raw_len = max(1200, int(min_completion_tokens) * 4)
+    if raw_len < min_raw_len:
+        return True
     if completion_tokens > 0:
         return completion_tokens < max(1, int(min_completion_tokens))
-    min_raw_len = max(800, int(min_completion_tokens) * 2)
-    return raw_len < min_raw_len
+    return False
 
 
 def _normalize_answer_obj(obj: dict[str, Any], row: dict[str, Any]) -> dict[str, Any]:
@@ -1100,9 +1095,9 @@ def main() -> None:
     ap.add_argument("--resume", action="store_true")
     ap.add_argument("--timeout-sec", type=float, default=120.0)
     ap.add_argument("--start-index", type=int, default=1)
-    ap.add_argument("--easy-max-tokens", type=int, default=6072)
-    ap.add_argument("--medium-max-tokens", type=int, default=12124)
-    ap.add_argument("--hard-max-tokens", type=int, default=12124)
+    ap.add_argument("--easy-max-tokens", type=int, default=12172)
+    ap.add_argument("--medium-max-tokens", type=int, default=12172)
+    ap.add_argument("--hard-max-tokens", type=int, default=12172)
     ap.add_argument("--easy-min-completion-tokens", type=int, default=1024)
     ap.add_argument("--medium-min-completion-tokens", type=int, default=2048)
     ap.add_argument("--hard-min-completion-tokens", type=int, default=2048)
