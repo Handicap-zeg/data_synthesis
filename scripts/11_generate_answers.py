@@ -1093,6 +1093,7 @@ def main() -> None:
     ap.add_argument("--trust-remote-code", action="store_true")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--resume", action="store_true")
+    ap.add_argument("--resume-from-prefix", action="append", default=[])
     ap.add_argument("--timeout-sec", type=float, default=120.0)
     ap.add_argument("--start-index", type=int, default=1)
     ap.add_argument("--easy-max-tokens", type=int, default=12172)
@@ -1126,6 +1127,12 @@ def main() -> None:
     if not out_prefix.is_absolute():
         out_prefix = (root / out_prefix).resolve()
     status_path = out_prefix.parent / f"{out_prefix.stem}.status.json"
+    resume_prefixes: list[Path] = []
+    for raw in list(args.resume_from_prefix or []):
+        p = Path(raw)
+        if not p.is_absolute():
+            p = (root / p).resolve()
+        resume_prefixes.append(p)
 
     synth_cfg = cfg.get("synthesis", {})
     backend = str(args.backend).strip().lower()
@@ -1166,9 +1173,18 @@ def main() -> None:
 
     writer = JsonlShardWriter(out_prefix=out_prefix, shard_size=100, start_index=int(args.start_index))
     completed_keys: set[tuple[str, str]] = set()
+    scan_prefixes: list[Path] = []
     if args.resume:
-        pat = f"{out_prefix.stem}_*.jsonl"
-        for path in sorted(out_prefix.parent.glob(pat)):
+        scan_prefixes.append(out_prefix)
+    scan_prefixes.extend(resume_prefixes)
+    seen_resume_files: set[str] = set()
+    for prefix in scan_prefixes:
+        pat = f"{prefix.stem}_*.jsonl"
+        for path in sorted(prefix.parent.glob(pat)):
+            path_key = str(path.resolve())
+            if path_key in seen_resume_files:
+                continue
+            seen_resume_files.add(path_key)
             for row in read_jsonl(str(path)):
                 if not isinstance(row, dict):
                     continue
@@ -1186,6 +1202,7 @@ def main() -> None:
         "base_url": base_url,
         "model_path": model_path if backend == "local_hf" else "",
         "input_files": [str(p) for p in input_paths],
+        "resume_from_prefixes": [str(p) for p in resume_prefixes],
         "requested_rows": len(rows),
         "completed_rows": 0,
         "failed_rows": 0,
