@@ -20,9 +20,9 @@ LOG_DIR=${LOG_DIR:-$PROJECT_ROOT/data/outputs/debug/step11_qwq_logs}
 PID_DIR=${PID_DIR:-$LOG_DIR/pids}
 
 MATH_ROOT=${MATH_ROOT:-/jizhicfs/zeg/datasets/MATH/train}
-MATH_INPUT_DIR=${MATH_INPUT_DIR:-/jizhicfs/zeg/datasets/MATH_step11_inputs}
-MATH_EXISTING_PREFIX=${MATH_EXISTING_PREFIX:-/jizhicfs/zeg/datasets/MATH_step11_answers_qwq/math_train}
-MATH_OUT_DIR=${MATH_OUT_DIR:-/jizhicfs/zeg/datasets/MATH_step11_answers_qwq_repair}
+MATH_INPUT_DIR=${MATH_INPUT_DIR:-$PROJECT_ROOT/MATH_step11_inputs}
+MATH_EXISTING_PREFIX=${MATH_EXISTING_PREFIX:-$PROJECT_ROOT/MATH_step11_answers_clean/math_clean}
+MATH_OUT_DIR=${MATH_OUT_DIR:-$PROJECT_ROOT/MATH_step11_answers_qwq_repair}
 
 mkdir -p "$SYNTH_WORK_DIR" "$LOG_DIR" "$PID_DIR" "$MATH_INPUT_DIR" "$MATH_OUT_DIR"
 
@@ -126,14 +126,18 @@ launch_worker() {
   echo "[launched] $kind ${start_shard}-${end_shard} pid=$! log=$log_path out_prefix=$out_prefix"
 }
 
-echo "[prepare] MATH input shards"
-"$PYTHON_BIN" "$PROJECT_ROOT/scripts/11b_generate_math_train_answers.py" \
-  --project-root "$PROJECT_ROOT" \
-  --math-root "$MATH_ROOT" \
-  --config "$CONFIG" \
-  --input-dir "$MATH_INPUT_DIR" \
-  --out-prefix "$MATH_OUT_DIR/math_train" \
-  --prepare-only
+if find "$MATH_INPUT_DIR" -maxdepth 1 -type f -name 'math_train_*.jsonl' | grep -q .; then
+  echo "[prepare] Reusing existing MATH input shards under $MATH_INPUT_DIR"
+else
+  echo "[prepare] MATH input shards"
+  "$PYTHON_BIN" "$PROJECT_ROOT/scripts/11b_generate_math_train_answers.py" \
+    --project-root "$PROJECT_ROOT" \
+    --math-root "$MATH_ROOT" \
+    --config "$CONFIG" \
+    --input-dir "$MATH_INPUT_DIR" \
+    --out-prefix "$MATH_OUT_DIR/math_train" \
+    --prepare-only
+fi
 
 synth_completed_rows=$(completed_rows_from_prefix "$SYNTH_EXISTING_PREFIX")
 math_completed_rows=$(completed_rows_from_prefix "$MATH_EXISTING_PREFIX")
