@@ -1,0 +1,13 @@
+{
+  "synth": {
+    "input_rows": 2485,
+    "unique_rows": 2485,
+    "shards": 25
+  },
+  "math": {
+    "input_rows": 2318,
+    "unique_rows": 2318,
+    "shards": 24
+  },
+  "total_unique": 4803
+}
