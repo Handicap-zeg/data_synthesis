@@ -14,15 +14,15 @@ MATH_TOTAL_SHARDS=${MATH_TOTAL_SHARDS:-75}
 SYNTH_BACKTRACK_SHARDS=${SYNTH_BACKTRACK_SHARDS:-12}
 MATH_BACKTRACK_SHARDS=${MATH_BACKTRACK_SHARDS:-0}
 
-SYNTH_EXISTING_PREFIX=${SYNTH_EXISTING_PREFIX:-$PROJECT_ROOT/data/outputs/answered_qwq_7500/synth}
-SYNTH_WORK_DIR=${SYNTH_WORK_DIR:-$PROJECT_ROOT/data/outputs/answered_qwq_repair}
-LOG_DIR=${LOG_DIR:-$PROJECT_ROOT/data/outputs/debug/step11_qwq_logs}
+SYNTH_EXISTING_PREFIX=${SYNTH_EXISTING_PREFIX:-$PROJECT_ROOT/data/outputs/answered_qwq_7500_merged_20260406/synth}
+SYNTH_WORK_DIR=${SYNTH_WORK_DIR:-$PROJECT_ROOT/data/outputs/answered_qwq_resume_20260406}
+LOG_DIR=${LOG_DIR:-$PROJECT_ROOT/data/outputs/debug/step11_qwq_resume_2way_logs}
 PID_DIR=${PID_DIR:-$LOG_DIR/pids}
 
 MATH_ROOT=${MATH_ROOT:-/jizhicfs/zeg/datasets/MATH/train}
 MATH_INPUT_DIR=${MATH_INPUT_DIR:-$PROJECT_ROOT/MATH_step11_inputs}
-MATH_EXISTING_PREFIX=${MATH_EXISTING_PREFIX:-$PROJECT_ROOT/MATH_step11_answers_clean/math_clean}
-MATH_OUT_DIR=${MATH_OUT_DIR:-$PROJECT_ROOT/MATH_step11_answers_qwq_repair}
+MATH_EXISTING_PREFIX=${MATH_EXISTING_PREFIX:-$PROJECT_ROOT/MATH_step11_answers_merged_20260406/math_merged}
+MATH_OUT_DIR=${MATH_OUT_DIR:-$PROJECT_ROOT/MATH_step11_answers_qwq_resume_20260406}
 
 mkdir -p "$SYNTH_WORK_DIR" "$LOG_DIR" "$PID_DIR" "$MATH_INPUT_DIR" "$MATH_OUT_DIR"
 
@@ -52,22 +52,6 @@ calc_start_shard() {
     start_shard="$total_shards"
   fi
   echo "$start_shard"
-}
-
-split_range_in_half() {
-  local start_shard="$1"
-  local total_shards="$2"
-  local count
-  local half
-  local end_first
-  count=$((total_shards - start_shard + 1))
-  if [ "$count" -le 1 ]; then
-    echo "$start_shard $total_shards $((total_shards + 1)) $total_shards"
-    return
-  fi
-  half=$(((count + 1) / 2))
-  end_first=$((start_shard + half - 1))
-  echo "$start_shard $end_first $((end_first + 1)) $total_shards"
 }
 
 launch_worker() {
@@ -145,18 +129,11 @@ math_completed_rows=$(completed_rows_from_prefix "$MATH_EXISTING_PREFIX")
 synth_start=$(calc_start_shard "$synth_completed_rows" "$SYNTH_TOTAL_SHARDS" "$SYNTH_BACKTRACK_SHARDS")
 math_start=$(calc_start_shard "$math_completed_rows" "$MATH_TOTAL_SHARDS" "$MATH_BACKTRACK_SHARDS")
 
-read -r synth_a_start synth_a_end synth_b_start synth_b_end <<<"$(split_range_in_half "$synth_start" "$SYNTH_TOTAL_SHARDS")"
-read -r math_a_start math_a_end math_b_start math_b_end <<<"$(split_range_in_half "$math_start" "$MATH_TOTAL_SHARDS")"
+echo "[synth] completed_rows=$synth_completed_rows start_shard=$synth_start worker=${synth_start}-${SYNTH_TOTAL_SHARDS} resume_prefix=$SYNTH_EXISTING_PREFIX"
+echo "[math] completed_rows=$math_completed_rows start_shard=$math_start worker=${math_start}-${MATH_TOTAL_SHARDS} resume_prefix=$MATH_EXISTING_PREFIX"
 
-echo "[synth] completed_rows=$synth_completed_rows start_shard=$synth_start worker1=${synth_a_start}-${synth_a_end} worker2=${synth_b_start}-${synth_b_end}"
-echo "[math] completed_rows=$math_completed_rows start_shard=$math_start worker1=${math_a_start}-${math_a_end} worker2=${math_b_start}-${math_b_end}"
+launch_worker synth "$synth_start" "$SYNTH_TOTAL_SHARDS" "$SYNTH_WORK_DIR/synth_resume" "$SYNTH_EXISTING_PREFIX" "$LOG_DIR/synth_resume.log"
+launch_worker math "$math_start" "$MATH_TOTAL_SHARDS" "$MATH_OUT_DIR/math_resume" "$MATH_EXISTING_PREFIX" "$LOG_DIR/math_resume.log"
 
-launch_worker synth "$synth_a_start" "$synth_a_end" "$SYNTH_WORK_DIR/synth_p1" "$SYNTH_EXISTING_PREFIX" "$LOG_DIR/synth_p1.log"
-launch_worker synth "$synth_b_start" "$synth_b_end" "$SYNTH_WORK_DIR/synth_p2" "$SYNTH_EXISTING_PREFIX" "$LOG_DIR/synth_p2.log"
-launch_worker math "$math_a_start" "$math_a_end" "$MATH_OUT_DIR/math_train_p1" "$MATH_EXISTING_PREFIX" "$LOG_DIR/math_p1.log"
-launch_worker math "$math_b_start" "$math_b_end" "$MATH_OUT_DIR/math_train_p2" "$MATH_EXISTING_PREFIX" "$LOG_DIR/math_p2.log"
-
-echo "[logs] tail -f $LOG_DIR/synth_p1.log"
-echo "[logs] tail -f $LOG_DIR/synth_p2.log"
-echo "[logs] tail -f $LOG_DIR/math_p1.log"
-echo "[logs] tail -f $LOG_DIR/math_p2.log"
+echo "[logs] tail -f $LOG_DIR/synth_resume.log"
+echo "[logs] tail -f $LOG_DIR/math_resume.log"
