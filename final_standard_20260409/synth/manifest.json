@@ -1,0 +1,13 @@
+{
+  "dataset": "synth_standard",
+  "total_rows": 7500,
+  "files": 75,
+  "answer_files_seen": 88,
+  "answer_rows_seen": 8078,
+  "verdict_counts": {
+    "ok": 6544,
+    "wrong_problem": 870,
+    "fail": 86
+  },
+  "out_dir": "/jizhicfs/zeg/data_synthesis/final_standard_20260409/synth"
+}

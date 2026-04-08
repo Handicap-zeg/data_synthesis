@@ -1,0 +1,13 @@
+{
+  "dataset": "math_standard",
+  "total_rows": 7500,
+  "files": 75,
+  "answer_files_seen": 83,
+  "answer_rows_seen": 7973,
+  "verdict_counts": {
+    "ok": 7447,
+    "fail": 47,
+    "wrong_problem": 6
+  },
+  "out_dir": "/jizhicfs/zeg/data_synthesis/final_standard_20260409/math"
+}
